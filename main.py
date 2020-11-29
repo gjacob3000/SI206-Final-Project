@@ -17,6 +17,7 @@ def createTables(curr,conn):
     curr.execute("CREATE TABLE Countries (id INTEGER PRIMARY KEY, name TEXT)")
     curr.execute("DROP TABLE IF EXISTS CountryCases")
     curr.execute("CREATE TABLE CountryCases (name TEXT PRIMARY KEY, cases INTEGER, deaths INTEGER, population INTEGER, LE INTEGER, lat NUMBER, lon NUMBER)")
+    curr.execute("CREATE TABLE CountryAQIs (country TEXT PRIMARY KEY, city TEXT, aqi INTEGER)")
 
 def getPollutionData():
     try:
