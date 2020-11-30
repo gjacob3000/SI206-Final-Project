@@ -3,6 +3,7 @@ from bs4 import BeautifulSoup
 import json
 import sqlite3 
 import os
+import time
 
 AIRVISUALKEY = "f6a636a5-5d43-4c10-ac4b-15b0b84fab61"
 
@@ -13,11 +14,12 @@ def setUpDatabase(db_name):
     return curr, conn
 
 def createTables(curr,conn):
-    curr.execute("DROP TABLE IF EXISTS Countries")
-    curr.execute("CREATE TABLE Countries (id INTEGER PRIMARY KEY, name TEXT)")
-    curr.execute("DROP TABLE IF EXISTS CountryCases")
-    curr.execute("CREATE TABLE CountryCases (name TEXT PRIMARY KEY, cases INTEGER, deaths INTEGER, population INTEGER, LE INTEGER, lat NUMBER, lon NUMBER)")
-    curr.execute("CREATE TABLE CountryAQIs (country TEXT PRIMARY KEY, city TEXT, aqi INTEGER)")
+    #curr.execute("DROP TABLE IF EXISTS Countries")
+    curr.execute("CREATE TABLE IF NOT EXISTS Countries (id INTEGER PRIMARY KEY, name TEXT)")
+    #curr.execute("DROP TABLE IF EXISTS CountryCases")
+    curr.execute("CREATE TABLE IF NOT EXISTS CountryCases (name TEXT PRIMARY KEY, cases INTEGER, deaths INTEGER, population INTEGER, LE INTEGER, lat NUMBER, lon NUMBER)")
+    #curr.execute("DROP TABLE IF EXISTS CountryAQIs")
+    curr.execute("CREATE TABLE IF NOT EXISTS CountryAQIs (name TEXT PRIMARY KEY, city TEXT, aqi INTEGER)")
 
 def getPollutionData():
     try:
@@ -34,18 +36,39 @@ def getPollutionApiData(curr,conn):
     try:
         curr.execute("SELECT name,lat,lon FROM CountryCases")
         list_of_coords = curr.fetchall()
+        count = 0
+        run = 0
         for coord in list_of_coords:
-            url = "http://api.airvisual.com/v2/nearest_city?lat="+str(coord[1])+"&lon="+str(coord[2])+"&key="+AIRVISUALKEY
-            r = requests.get(url)
-            dict_list = json.loads(r.text)
-            if(coord[0] != dict_list["data"]["country"]):
-                print(coord[0])
-                print(dict_list["data"]["country"])
-                print("wrong country!")
-            else:
-                print(dict_list)
+            if count < 15:
+                url = "http://api.airvisual.com/v2/nearest_city?lat="+str(coord[1])+"&lon="+str(coord[2])+"&key="+AIRVISUALKEY
+                r = requests.get(url)
+                dict_list = json.loads(r.text)
+                if(coord[0] != dict_list["data"]["country"]):
+                    print(coord[0])
+                    print(dict_list["data"]["country"])
+                    print("wrong country!")
+                    removeFromData(curr, conn, coord[0])
+                else:
+                    name = dict_list["data"]["country"]
+                    city = dict_list["data"]["city"]
+                    aqi = dict_list["data"]["current"]["pollution"]["aqius"]
+
+                    curr.execute("SELECT name FROM CountryAQIs WHERE name = ?", (name,))
+                    check = curr.fetchone()
+    
+                    if check is None:
+                        curr.execute("INSERT OR IGNORE INTO CountryAQIs (name, city, aqi) VALUES (?,?,?)", (name, city, aqi))
+                        count += 1
+                
+            run += 1
+            #cant pull more than 10 per minute so we need to pause the system for a few seconds before collecting more
+            if run % 5 == 0 and run != 0: 
+                print("Pausing for a bit...")
+                time.sleep(30)
+        conn.commit()    
+        
     except:
-        print("error when readong from url")
+        print("error when reading from url")
         dict_list = []
     return
 
@@ -62,31 +85,42 @@ def getCovidApiData(curr, conn):
         life_expectancy = 0.0
         lat = 0.0
         lon = 0.0
+        count = 0
         for items in dict_list.items():
+            if count < 25: #using to make sure we only bring in 25 data points per run
+                name = items[0]
+                confirmed = items[1]["All"]["confirmed"]
+                deaths = items[1]["All"]["deaths"]
 
-            name = items[0]
-            confirmed = items[1]["All"]["confirmed"]
-            deaths = items[1]["All"]["deaths"]
+                if "population" in items[1]["All"]:
+                    population = items[1]["All"]["population"] 
+                if "life_expectancy" in items[1]["All"]:
+                    life_expectancy = items[1]["All"]["life_expectancy"]
+                if "lat" in items[1]["All"]:
+                    lat = items[1]["All"]["lat"]
+                if "long" in items[1]["All"]:
+                    lon = items[1]["All"]["long"] 
 
-            if "population" in items[1]["All"]:
-                population = items[1]["All"]["population"] 
-            if "life_expectancy" in items[1]["All"]:
-                life_expectancy = items[1]["All"]["life_expectancy"]
-            if "lat" in items[1]["All"]:
-                lat = items[1]["All"]["lat"]
-            if "long" in items[1]["All"]:
-                lon = items[1]["All"]["long"] 
+                #using this to check if value already exists in table
+                curr.execute("SELECT name FROM Countries WHERE name = ?", (name,))
+                check = curr.fetchone()
+    
+                if check is None:
+                    curr.execute("INSERT OR IGNORE INTO CountryCases (name, cases, deaths, population, LE, lat, lon) VALUES (?,?,?,?,?,?,?)", (name,confirmed,deaths,population,life_expectancy,lat,lon))
+                    curr.execute("INSERT OR IGNORE INTO Countries (name) VALUES (?)", (name,))
+                    count += 1
 
-            curr.execute("INSERT OR IGNORE INTO CountryCases (name, cases, deaths, population, LE, lat, lon) VALUES (?,?,?,?,?,?,?)", (name,confirmed,deaths,population,life_expectancy,lat,lon))
-            curr.execute("INSERT OR IGNORE INTO Countries (name) VALUES (?)", (name,))
-
-            print((name,confirmed, deaths, population, life_expectancy, lat, lon))
+            #print((name,confirmed, deaths, population, life_expectancy, lat, lon))
         conn.commit()
 
     except:
         print("error when accessing API")
         dict_list = []
 
+def removeFromData(curr, conn, name):
+    curr.execute("DELETE FROM Countries WHERE name = ?", (name,))
+    curr.execute("DELETE FROM CountryCases WHERE name = ?", (name,))
+    conn.commit()
 
 def main():
     curr,conn = setUpDatabase("covid_data.db")
