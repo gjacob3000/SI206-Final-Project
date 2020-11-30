@@ -4,6 +4,7 @@ import json
 import sqlite3 
 import os
 import time
+import math
 
 AIRVISUALKEY = "f6a636a5-5d43-4c10-ac4b-15b0b84fab61"
 
@@ -36,14 +37,21 @@ def getPollutionApiData(curr,conn):
     try:
         curr.execute("SELECT name,lat,lon FROM CountryCases")
         list_of_coords = curr.fetchall()
-        count = 0
-        run = 0
+        count = 0 #this checks how many countries we actually add to the database that aren't repeats
+        run = 0 #using this to keep track of how many times we call on the api
         for coord in list_of_coords:
-            if count < 15:
+            if count < 25: #using to make sure we only bring in 25 data points per run
                 url = "http://api.airvisual.com/v2/nearest_city?lat="+str(coord[1])+"&lon="+str(coord[2])+"&key="+AIRVISUALKEY
                 r = requests.get(url)
                 dict_list = json.loads(r.text)
-                if(coord[0] != dict_list["data"]["country"]):
+                
+                covid_lat = coord[1]
+                covid_lon = coord[2]
+                aqi_lat = dict_list["data"]["location"]["coordinates"][1]
+                aqi_lon = dict_list["data"]["location"]["coordinates"][0]
+                aqi_close = isAQIClose(covid_lat, covid_lon, aqi_lat, aqi_lon)
+                
+                if aqi_close is False:
                     print(coord[0])
                     print(dict_list["data"]["country"])
                     print("wrong country!")
@@ -62,9 +70,9 @@ def getPollutionApiData(curr,conn):
                 
             run += 1
             #cant pull more than 10 per minute so we need to pause the system for a few seconds before collecting more
-            if run % 5 == 0 and run != 0: 
+            if run % 10 == 0 and run != 0: 
                 print("Pausing for a bit...")
-                time.sleep(30)
+                time.sleep(60) # this pauses the program to give api a break
         conn.commit()    
         
     except:
@@ -117,10 +125,26 @@ def getCovidApiData(curr, conn):
         print("error when accessing API")
         dict_list = []
 
+#if any air quality points are too inaccurate we will remove the country from our analysis
 def removeFromData(curr, conn, name):
     curr.execute("DELETE FROM Countries WHERE name = ?", (name,))
     curr.execute("DELETE FROM CountryCases WHERE name = ?", (name,))
     conn.commit()
+
+#checking to see if air quality loc is close to covid loc
+#making the dist <= 6 means the air quality location is within 300 miles
+def isAQIClose(covid_lat, covid_lon, aqi_lat, aqi_lon):
+    lat_diff = (covid_lat - aqi_lat)**2
+    lon_diff = (covid_lon - aqi_lon)**2
+    dist = math.sqrt(lat_diff + lon_diff)
+
+    if dist <= 6:
+        return True
+    else:
+        return False
+
+
+
 
 def main():
     curr,conn = setUpDatabase("covid_data.db")
