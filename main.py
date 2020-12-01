@@ -31,7 +31,6 @@ def getPollutionData(curr,conn):
         countries = []
         for country in country_tuple:
             countries.append(country[0])
-        print(countries)
         url = "https://www.iqair.com/us/world-most-polluted-countries"
         soup = BeautifulSoup(requests.get(url).text, 'html.parser')
         val = soup.find_all('tr')
@@ -45,7 +44,6 @@ def getPollutionData(curr,conn):
                 country = ""
                 for name in names:
                     country =  name.getText()
-                    print(country)
                 aqi2019 = 0
                 aqi2018 = 0
 
@@ -54,10 +52,7 @@ def getPollutionData(curr,conn):
 
                 if(averages[1].text != " - "):
                     aqi2018 = float(averages[1].text)
-
-                print(aqi2019)
-                print(aqi2018)
-
+                    
                 if country not in countries:
                     curr.execute("INSERT OR IGNORE INTO AirWebAQIs (country, aqi2019, aqi2018) VALUES (?,?,?)", (country, aqi2019, aqi2018))
                     count+=1
@@ -194,6 +189,9 @@ def main():
     getCovidApiData(curr,conn)
     #getPollutionApiData(curr,conn)
     getPollutionData(curr,conn)
+    url = "https://www.numbeo.com/pollution/rankings_by_country.jsp"
+    r = requests.get(url)
+    print(r.text)
     print("hello world!")
 
 if __name__ == "__main__":
