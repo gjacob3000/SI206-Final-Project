@@ -15,6 +15,7 @@ def setUpDatabase(db_name):
     return curr, conn
 
 def createTables(curr,conn):
+
     curr.execute("CREATE TABLE IF NOT EXISTS CountryCases (name TEXT PRIMARY KEY, cases INTEGER, deaths INTEGER, population INTEGER, LE INTEGER, lat NUMBER, lon NUMBER)")
     curr.execute("CREATE TABLE IF NOT EXISTS CountryAQIs (name TEXT PRIMARY KEY, aqi INTEGER)")
 
@@ -41,7 +42,7 @@ def getPollutionData(curr, conn, ):
             if (table_length + i) < len(aqi_data): #need to make sure value is within index of aqi_data
                 curr.execute("INSERT OR IGNORE INTO CountryAQIs (name, aqi) VALUES (?,?)", (aqi_data[table_length + i][0], aqi_data[table_length + i][1]))
                 countries.append(aqi_data[table_length + i][0])
-                i += 1
+                
     except:
         print("error when reading from url")
     
@@ -106,6 +107,7 @@ def getCovidApiData(curr, conn, countries):
         url = "https://covid-api.mmediagroup.fr/v1/cases"
         r = requests.get(url)
         dict_list = json.loads(r.text)
+
         name = ""
         confirmed = -1
         deaths = -1
@@ -176,6 +178,10 @@ def removeFromData(curr, conn, name):
     curr.execute("DELETE FROM CountryAQIs WHERE name = ?", (name,))
     conn.commit()
 
+def dropTablesForDebugging(curr,conn):
+    curr.execute("DROP TABLE IF EXISTS CountryCases")
+    curr.execute("DROP TABLE IF EXISTS CountryAQIs")
+
 #checking to see if air quality loc is close to covid loc
 #making the dist <= 6 means the air quality location is within 300 miles
 def isAQIClose(covid_lat, covid_lon, aqi_lat, aqi_lon):
@@ -193,6 +199,7 @@ def isAQIClose(covid_lat, covid_lon, aqi_lat, aqi_lon):
 
 def main():
     curr,conn = setUpDatabase("covid_data.db")
+    #dropTablesForDebugging(curr,conn)
     createTables(curr,conn)
     #loading API
     countries = getPollutionData(curr,conn)

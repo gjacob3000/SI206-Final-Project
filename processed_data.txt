@@ -1,0 +1,419 @@
+----------------- GLOBAL DATA -----------------
+Total Cases: 47848249
+Total Deaths: 1165318
+Total Population: 6369735558
+Mortality Rate: 0.024354454433640822
+% Population Infected: 0.7511810900831748
+------------------ AVERAGES -------------------
+Average Cases Per Country: 469100.48039215687
+Average Deaths Per Country: 11424.686274509804
+Average AQI Per Country: 58.10480392156862
+---------------- COUNTRY DATA -----------------
+Afghanistan:
+     Cases by AQI: 497.46442708890555
+     Cases by Population: 0.0013086938923668652
+     Mortality Rate: 0.03815217858832638
+Albania:
+     Cases by AQI: 488.01124744376284
+     Cases by Population: 0.013030567673667243
+     Mortality Rate: 0.0212141846943586
+Algeria:
+     Cases by AQI: 1273.7140232700553
+     Cases by Population: 0.0020136191022335904
+     Mortality Rate: 0.029219101191120086
+Argentina:
+     Cases by AQI: 28147.263386682473
+     Cases by Population: 0.03217753564909395
+     Mortality Rate: 0.027187857353953893
+Armenia:
+     Cases by AQI: 2261.8680950786743
+     Cases by Population: 0.04611032435291508
+     Mortality Rate: 0.016014919629377462
+Australia:
+     Cases by AQI: 1202.0671834625323
+     Cases by Population: 0.0011415688989712752
+     Mortality Rate: 0.03253081112066495
+Austria:
+     Cases by AQI: 13046.46651270208
+     Cases by Population: 0.03233444218634111
+     Mortality Rate: 0.011272552185119099
+Azerbaijan:
+     Cases by AQI: 1588.1520314547838
+     Cases by Population: 0.012330185969315566
+     Mortality Rate: 0.011487423252129134
+Bahrain:
+     Cases by AQI: 1232.0204023802778
+     Cases by Population: 0.05825869766793695
+     Mortality Rate: 0.003921523529141175
+Bangladesh:
+     Cases by AQI: 5416.893859955727
+     Cases by Population: 0.002823420799367092
+     Mortality Rate: 0.014290261801725844
+Belarus:
+     Cases by AQI: 3135.5438274437815
+     Cases by Population: 0.014431994295091705
+     Mortality Rate: 0.008474390217128806
+Belgium:
+     Cases by AQI: 10759.317927692882
+     Cases by Population: 0.05051430809278859
+     Mortality Rate: 0.028830248811369284
+Bolivia:
+     Cases by AQI: 1930.469583778015
+     Cases by Population: 0.013093850664157226
+     Mortality Rate: 0.06189706166901623
+Brazil:
+     Cases by AQI: 115893.14066215475
+     Cases by Population: 0.030273448950638316
+     Mortality Rate: 0.02732375844358114
+Bulgaria:
+     Cases by AQI: 2220.6938713128534
+     Cases by Population: 0.02050935758848348
+     Mortality Rate: 0.027770130763936682
+Cambodia:
+     Cases by AQI: 4.169331116511063
+     Cases by Population: 2.0368160117230634e-05
+     Mortality Rate: 0.0
+Canada:
+     Cases by AQI: 13641.651769753307
+     Cases by Population: 0.010418166415052518
+     Mortality Rate: 0.03183534832279319
+Chile:
+     Cases by AQI: 6919.275144218711
+     Cases by Population: 0.03055947788961184
+     Mortality Rate: 0.027929670154401596
+China:
+     Cases by AQI: 1163.0195292939409
+     Cases by Population: 6.591050255763533e-05
+     Mortality Rate: 0.051053798626509654
+Colombia:
+     Cases by AQI: 21089.141575912876
+     Cases by Population: 0.026837654027163423
+     Mortality Rate: 0.027920589669245127
+Costa Rica:
+     Cases by AQI: 3030.338541666667
+     Cases by Population: 0.028464038971260163
+     Mortality Rate: 0.012360532233346223
+Croatia:
+     Cases by AQI: 4271.433322248088
+     Cases by Population: 0.030659149515450238
+     Mortality Rate: 0.013905108920758007
+Cyprus:
+     Cases by AQI: 191.7074941027037
+     Cases by Population: 0.008956797968040381
+     Mortality Rate: 0.004637955513487932
+Denmark:
+     Cases by AQI: 3764.0334572490706
+     Cases by Population: 0.01412771945344168
+     Mortality Rate: 0.010333078195600108
+Dominican Republic:
+     Cases by AQI: 1901.5847860538827
+     Cases by Population: 0.01337308690871866
+     Mortality Rate: 0.016188849070755896
+Ecuador:
+     Cases by AQI: 3388.7618712627504
+     Cases by Population: 0.011590174183743404
+     Mortality Rate: 0.06986013441627527
+Egypt:
+     Cases by AQI: 1368.6503719447396
+     Cases by Population: 0.0011881830449536172
+     Mortality Rate: 0.05737160407554072
+Estonia:
+     Cases by AQI: 647.1083070452156
+     Cases by Population: 0.009398059913013733
+     Mortality Rate: 0.009587260318492039
+Ethiopia:
+     Cases by AQI: 1378.1645173406785
+     Cases by Population: 0.0010487489223965241
+     Mortality Rate: 0.01549866453476752
+Finland:
+     Cases by AQI: 2112.977099236641
+     Cases by Population: 0.004510403421475582
+     Mortality Rate: 0.016016377649325626
+France:
+     Cases by AQI: 52131.439046746105
+     Cases by Population: 0.0350112623128742
+     Mortality Rate: 0.023216979572890917
+Georgia:
+     Cases by AQI: 1920.4532577903685
+     Cases by Population: 0.03465794628457992
+     Mortality Rate: 0.009344760443710172
+Germany:
+     Cases by AQI: 36540.71038251366
+     Cases by Population: 0.013029557461323631
+     Mortality Rate: 0.015603152408796237
+Ghana:
+     Cases by AQI: 583.7419500621398
+     Cases by Population: 0.001791900700393974
+     Mortality Rate: 0.0062515725704995456
+Greece:
+     Cases by AQI: 2011.6759029237533
+     Cases by Population: 0.009433077178182746
+     Mortality Rate: 0.022855297280352613
+Guatemala:
+     Cases by AQI: 1671.1664841182912
+     Cases by Population: 0.007216837339964406
+     Mortality Rate: 0.03417115891923776
+Hungary:
+     Cases by AQI: 4462.022194821208
+     Cases by Population: 0.022334072138018194
+     Mortality Rate: 0.022213317858162693
+Iceland:
+     Cases by AQI: 332.83950617283955
+     Cases by Population: 0.01609432131930453
+     Mortality Rate: 0.004821958456973294
+India:
+     Cases by AQI: 118939.27853192559
+     Cases by Population: 0.007066121135771603
+     Mortality Rate: 0.014543355995032765
+Indonesia:
+     Cases by AQI: 8055.052316890881
+     Cases by Population: 0.002041290143796703
+     Mortality Rate: 0.03144467351911268
+Iran:
+     Cases by AQI: 12544.921110966228
+     Cases by Population: 0.01185358492120798
+     Mortality Rate: 0.0501481181203031
+Iraq:
+     Cases by AQI: 7586.832349306605
+     Cases by Population: 0.014436434087990113
+     Mortality Rate: 0.02218445784898715
+Ireland:
+     Cases by AQI: 2115.602216389618
+     Cases by Population: 0.015235032678750276
+     Mortality Rate: 0.028300066166740186
+Israel:
+     Cases by AQI: 5860.229645093946
+     Cases by Population: 0.04047865967599864
+     Mortality Rate: 0.008505370406654673
+Italy:
+     Cases by AQI: 28779.04761904762
+     Cases by Population: 0.026980402595017848
+     Mortality Rate: 0.03470129636590461
+Jamaica:
+     Cases by AQI: 157.6996336996337
+     Cases by Population: 0.003723836184422442
+     Mortality Rate: 0.023878100901235714
+Japan:
+     Cases by AQI: 3786.5277071682763
+     Cases by Population: 0.0011684719195164588
+     Mortality Rate: 0.013936440165948362
+Jordan:
+     Cases by AQI: 2856.7894805363885
+     Cases by Population: 0.022616163316259468
+     Mortality Rate: 0.012537027753725562
+Kazakhstan:
+     Cases by AQI: 1835.617198335645
+     Cases by Population: 0.007270070986298497
+     Mortality Rate: 0.015036116903919969
+Kenya:
+     Cases by AQI: 1092.189132706374
+     Cases by Population: 0.0016824593999878712
+     Mortality Rate: 0.017567987753832906
+Kuwait:
+     Cases by AQI: 2149.0884435739035
+     Cases by Population: 0.03448181663462691
+     Mortality Rate: 0.006169593718231851
+Laos:
+     Cases by AQI: 0.5
+     Cases by Population: 5.6866564792889055e-06
+     Mortality Rate: 0.0
+Latvia:
+     Cases by AQI: 501.1740534194306
+     Cases by Population: 0.008757892361271395
+     Mortality Rate: 0.012064421669106882
+Lebanon:
+     Cases by AQI: 1439.0282307951861
+     Cases by Population: 0.021035266427143293
+     Mortality Rate: 0.00795660601513162
+Lithuania:
+     Cases by AQI: 2197.2411322106773
+     Cases by Population: 0.021217542695439257
+     Mortality Rate: 0.008251121076233183
+Luxembourg:
+     Cases by AQI: 1417.1638741315899
+     Cases by Population: 0.05943560343128433
+     Mortality Rate: 0.009256589191994924
+Malaysia:
+     Cases by AQI: 1045.9640184683967
+     Cases by Population: 0.002077423841389637
+     Mortality Rate: 0.005479702269510023
+Malta:
+     Cases by AQI: 127.19659881473846
+     Cases by Population: 0.02291596550883749
+     Mortality Rate: 0.013876228096829738
+Mauritius:
+     Cases by AQI: 8.969567538707956
+     Cases by Population: 0.0003983755131851229
+     Mortality Rate: 0.01984126984126984
+Mexico:
+     Cases by AQI: 17594.296097329752
+     Cases by Population: 0.008621204373911978
+     Mortality Rate: 0.0951377719585144
+Monaco:
+     Cases by AQI: 7.0380214954351095
+     Cases by Population: 0.015738467502261273
+     Mortality Rate: 0.0049261083743842365
+Mongolia:
+     Cases by AQI: 8.703683581440835
+     Cases by Population: 0.00026043300807927566
+     Mortality Rate: 0.0
+Montenegro:
+     Cases by AQI: 762.9813933362182
+     Cases by Population: 0.0036275046008567144
+     Mortality Rate: 0.014150007089181908
+Morocco:
+     Cases by AQI: 5083.252496433666
+     Cases by Population: 0.009970346601722796
+     Mortality Rate: 0.016405864128238516
+Nepal:
+     Cases by AQI: 2752.971698113208
+     Cases by Population: 0.007966286160469965
+     Mortality Rate: 0.006459571989102685
+Netherlands:
+     Cases by AQI: 20372.65415549598
+     Cases by Population: 0.031223992479897496
+     Mortality Rate: 0.017771135299757487
+New Zealand:
+     Cases by AQI: 87.54251700680273
+     Cases by Population: 0.0004375434834071356
+     Mortality Rate: 0.012141816415735794
+Nigeria:
+     Cases by AQI: 777.5002877201059
+     Cases by Population: 0.0003539122299869895
+     Mortality Rate: 0.017363115591278476
+North Macedonia:
+     Cases by AQI: 771.2576343013835
+     Cases by Population: 0.03057213438735178
+     Mortality Rate: 0.02849154788454701
+Norway:
+     Cases by AQI: 1794.93545183714
+     Cases by Population: 0.006813834175591093
+     Mortality Rate: 0.009183955739972337
+Oman:
+     Cases by AQI: 3297.7605971740873
+     Cases by Population: 0.026680761354729306
+     Mortality Rate: 0.011503730830483673
+Pakistan:
+     Cases by AQI: 5450.21774632553
+     Cases by Population: 0.002032738922083747
+     Mortality Rate: 0.020203155197986426
+Panama:
+     Cases by AQI: 2808.8429612061664
+     Cases by Population: 0.04045442978275196
+     Mortality Rate: 0.01856989493745703
+Peru:
+     Cases by AQI: 11549.43604511639
+     Cases by Population: 0.02992431172730646
+     Mortality Rate: 0.037321434137117804
+Philippines:
+     Cases by AQI: 5813.981681034483
+     Cases by Population: 0.004113971194100083
+     Mortality Rate: 0.019442578134049995
+Poland:
+     Cases by AQI: 15704.723411000157
+     Cases by Population: 0.025957362283417714
+     Mortality Rate: 0.017309052886978444
+Portugal:
+     Cases by AQI: 9811.092824226465
+     Cases by Population: 0.028855300534217223
+     Mortality Rate: 0.015114355786231678
+Qatar:
+     Cases by AQI: 2298.1791094189707
+     Cases by Population: 0.05260397899220638
+     Mortality Rate: 0.0017070869317813487
+Romania:
+     Cases by AQI: 8085.762884844361
+     Cases by Population: 0.024155424993137463
+     Mortality Rate: 0.023836570865992654
+Russia:
+     Cases by AQI: 36368.424416746566
+     Cases by Population: 0.015806235768692264
+     Mortality Rate: 0.01735154239838027
+Saudi Arabia:
+     Cases by AQI: 5554.2430836182775
+     Cases by Population: 0.010849404610990888
+     Mortality Rate: 0.016498768748600852
+Serbia:
+     Cases by AQI: 2866.165659206012
+     Cases by Population: 0.0035755793542993396
+     Mortality Rate: 0.009142831085625691
+Singapore:
+     Cases by AQI: 1748.2882882882884
+     Cases by Population: 0.010197861423433536
+     Mortality Rate: 0.0004981277268198839
+Slovakia:
+     Cases by AQI: 2648.887221805451
+     Cases by Population: 0.019444855426052496
+     Mortality Rate: 0.00792039951288127
+Slovenia:
+     Cases by AQI: 3222.014449638759
+     Cases by Population: 0.036449459032219605
+     Mortality Rate: 0.018927902498219327
+South Africa:
+     Cases by AQI: 13830.60224089636
+     Cases by Population: 0.01392883662925553
+     Mortality Rate: 0.027259355648832157
+Spain:
+     Cases by AQI: 40827.025018578155
+     Cases by Population: 0.03555627532544377
+     Mortality Rate: 0.02734459136008232
+Sri Lanka:
+     Cases by AQI: 399.58354156255206
+     Cases by Population: 0.0011489723314989468
+     Mortality Rate: 0.0049193313044565805
+Sweden:
+     Cases by AQI: 12762.677165354331
+     Cases by Population: 0.02453196802123281
+     Mortality Rate: 0.027479239416112435
+Switzerland:
+     Cases by AQI: 14941.617176793055
+     Cases by Population: 0.03858799045068992
+     Mortality Rate: 0.014721529204578808
+Syria:
+     Cases by AQI: 111.47703180212014
+     Cases by Population: 0.0004316944161829741
+     Mortality Rate: 0.05287181437809053
+Tanzania:
+     Cases by AQI: 7.95561112847765
+     Cases by Population: 8.88151860497551e-06
+     Mortality Rate: 0.0412573673870334
+Thailand:
+     Cases by AQI: 53.255381344671804
+     Cases by Population: 5.805539373934284e-05
+     Mortality Rate: 0.014970059880239521
+Tunisia:
+     Cases by AQI: 1372.8046531422897
+     Cases by Population: 0.008391253408846434
+     Mortality Rate: 0.03368847461480433
+Turkey:
+     Cases by AQI: 9647.34219269103
+     Cases by Population: 0.007911905898345185
+     Mortality Rate: 0.02151688902037577
+Ukraine:
+     Cases by AQI: 11549.631562787841
+     Cases by Population: 0.01701250258152176
+     Mortality Rate: 0.01692180295423763
+United Arab Emirates:
+     Cases by AQI: 3333.2017370706676
+     Cases by Population: 0.01796355268987872
+     Mortality Rate: 0.0033874215326305814
+United Kingdom:
+     Cases by AQI: 40219.91629739045
+     Cases by Population: 0.02468561307499662
+     Mortality Rate: 0.03583510891926649
+Uruguay:
+     Cases by AQI: 127.88209606986901
+     Cases by Population: 0.0016943660953207492
+     Mortality Rate: 0.01314666211371009
+Venezuela:
+     Cases by AQI: 1386.1378096656288
+     Cases by Population: 0.0032021075104922856
+     Mortality Rate: 0.008760278922593122
+Vietnam:
+     Cases by AQI: 15.653689715281814
+     Cases by Population: 1.4098688727747726e-05
+     Mortality Rate: 0.025983667409057165
+Zimbabwe:
+     Cases by AQI: 136.2453786115295
+     Cases by Population: 0.0006019393700048107
+     Mortality Rate: 0.027738693467336685
