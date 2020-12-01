@@ -15,54 +15,39 @@ def setUpDatabase(db_name):
     return curr, conn
 
 def createTables(curr,conn):
-    #curr.execute("DROP TABLE IF EXISTS Countries")
-    curr.execute("CREATE TABLE IF NOT EXISTS Countries (id INTEGER PRIMARY KEY, name TEXT)")
-    #curr.execute("DROP TABLE IF EXISTS CountryCases")
     curr.execute("CREATE TABLE IF NOT EXISTS CountryCases (name TEXT PRIMARY KEY, cases INTEGER, deaths INTEGER, population INTEGER, LE INTEGER, lat NUMBER, lon NUMBER)")
-    #curr.execute("DROP TABLE IF EXISTS CountryAQIs")
-    curr.execute("CREATE TABLE IF NOT EXISTS CountryAQIs (name TEXT PRIMARY KEY, city TEXT, aqi INTEGER)")
+    curr.execute("CREATE TABLE IF NOT EXISTS CountryAQIs (name TEXT PRIMARY KEY, aqi INTEGER)")
 
-    curr.execute("CREATE TABLE IF NOT EXISTS AirWebAQIs (country TEXT PRIMARY KEY, aqi2019 NUMBER, aqi2018 NUMBER)")
-
-def getPollutionData(curr,conn):
+def getPollutionData(curr, conn, ):
+    countries = []
     try:
-        curr.execute("SELECT country,aqi2019,aqi2018 FROM AirWebAQIs")
-        country_tuple = curr.fetchall()
-        countries = []
-        for country in country_tuple:
-            countries.append(country[0])
-        url = "https://www.iqair.com/us/world-most-polluted-countries"
+        url = "https://www.numbeo.com/pollution/rankings_by_country.jsp"
         soup = BeautifulSoup(requests.get(url).text, 'html.parser')
-        val = soup.find_all('tr')
-        count = 0 
-        for values in val:
-            if count < 25:
-                names = values.find_all('div', class_ = "country-name")
-                averages = values.find_all('span')
-                if len(names) == 0:
-                    continue
-                country = ""
-                for name in names:
-                    country =  name.getText()
-                aqi2019 = 0
-                aqi2018 = 0
+        values = soup.find_all("tr", {'style': 'width: 100%'})
+    
+        aqi_data = []
+        
 
-                if(averages[0].text != " - "):
-                    aqi2019 = float(averages[0].text)
+        for val in values:
+            name = val.find('td', class_ = 'cityOrCountryInIndicesTable').text 
+            aqi = val.find('td', {'style':'text-align: right'}).text 
+            aqi_data.append((name, aqi),)
+        
+        curr.execute("SELECT name FROM CountryAQIs")
+        table_length = len(curr.fetchall())
 
-                if(averages[1].text != " - "):
-                    aqi2018 = float(averages[1].text)
-                    
-                if country not in countries:
-                    curr.execute("INSERT OR IGNORE INTO AirWebAQIs (country, aqi2019, aqi2018) VALUES (?,?,?)", (country, aqi2019, aqi2018))
-                    count+=1
-        #print(val)
-
+        
+        for i in range(25):
+            if (table_length + i) < len(aqi_data): #need to make sure value is within index of aqi_data
+                curr.execute("INSERT OR IGNORE INTO CountryAQIs (name, aqi) VALUES (?,?)", (aqi_data[table_length + i][0], aqi_data[table_length + i][1]))
+                countries.append(aqi_data[table_length + i][0])
+                i += 1
     except:
         print("error when reading from url")
-        dict_list = []
+    
     conn.commit()
-    return
+    return countries
+
 
 def getPollutionApiData(curr,conn):
     try:
@@ -116,10 +101,9 @@ def getPollutionApiData(curr,conn):
     conn.commit()  
     return
 
-def getCovidApiData(curr, conn):
+def getCovidApiData(curr, conn, countries):
     try:
         url = "https://covid-api.mmediagroup.fr/v1/cases"
-        soup = BeautifulSoup(requests.get(url).text, 'html.parser')
         r = requests.get(url)
         dict_list = json.loads(r.text)
         name = ""
@@ -130,6 +114,29 @@ def getCovidApiData(curr, conn):
         lat = 0.0
         lon = 0.0
         count = 0
+
+        for country in countries:
+            if count < 25:
+                if country in dict_list:
+                    item = dict_list[country]
+                    name = country
+                    confirmed = item["All"]["confirmed"]
+                    deaths = item["All"]["deaths"]
+
+                    if "population" in item["All"]:
+                        population = item["All"]["population"] 
+                    if "life_expectancy" in item["All"]:
+                        life_expectancy = item["All"]["life_expectancy"]
+                    if "lat" in item["All"]:
+                        lat = item["All"]["lat"]
+                    if "long" in item["All"]:
+                        lon = item["All"]["long"]
+
+                    curr.execute("INSERT OR IGNORE INTO CountryCases (name, cases, deaths, population, LE, lat, lon) VALUES (?,?,?,?,?,?,?)", (name,confirmed,deaths,population,life_expectancy,lat,lon))
+                    count += 1
+                else:
+                    removeFromData(curr, conn, country)
+        """
         for items in dict_list.items():
             if count < 25: #using to make sure we only bring in 25 data points per run
                 name = items[0]
@@ -156,15 +163,17 @@ def getCovidApiData(curr, conn):
 
             #print((name,confirmed, deaths, population, life_expectancy, lat, lon))
         conn.commit()
+        """
 
     except:
         print("error when accessing Covid API")
         dict_list = []
 
+    conn.commit()
+
 #if any air quality points are too inaccurate we will remove the country from our analysis
 def removeFromData(curr, conn, name):
-    curr.execute("DELETE FROM Countries WHERE name = ?", (name,))
-    curr.execute("DELETE FROM CountryCases WHERE name = ?", (name,))
+    curr.execute("DELETE FROM CountryAQIs WHERE name = ?", (name,))
     conn.commit()
 
 #checking to see if air quality loc is close to covid loc
@@ -186,12 +195,11 @@ def main():
     curr,conn = setUpDatabase("covid_data.db")
     createTables(curr,conn)
     #loading API
-    getCovidApiData(curr,conn)
-    #getPollutionApiData(curr,conn)
-    getPollutionData(curr,conn)
-    url = "https://www.numbeo.com/pollution/rankings_by_country.jsp"
-    r = requests.get(url)
-    print(r.text)
+    countries = getPollutionData(curr,conn)
+    getCovidApiData(curr,conn, countries)
+    
+    
+    
     print("hello world!")
 
 if __name__ == "__main__":
