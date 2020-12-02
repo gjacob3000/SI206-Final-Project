@@ -31,6 +31,8 @@ def getPollutionData(curr, conn, ):
 
         for val in values:
             name = val.find('td', class_ = 'cityOrCountryInIndicesTable').text 
+            if name == "United States":
+                name = "US"
             aqi = val.find('td', {'style':'text-align: right'}).text 
             aqi_data.append((name, aqi),)
         
@@ -193,7 +195,6 @@ def isAQIClose(covid_lat, covid_lon, aqi_lat, aqi_lon):
         return True
     else:
         return False
-
 
 
 
