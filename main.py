@@ -17,7 +17,16 @@ def setUpDatabase(db_name):
 def createTables(curr,conn):
 
     curr.execute("CREATE TABLE IF NOT EXISTS CountryCases (name TEXT PRIMARY KEY, cases INTEGER, deaths INTEGER, population INTEGER, LE INTEGER, lat NUMBER, lon NUMBER)")
-    curr.execute("CREATE TABLE IF NOT EXISTS CountryAQIs (name TEXT PRIMARY KEY, aqi INTEGER)")
+    curr.execute("CREATE TABLE IF NOT EXISTS CountryAQIs (name TEXT PRIMARY KEY, aqi INTEGER, color TEXT)")
+    
+    curr.execute("CREATE TABLE IF NOT EXISTS AQIColors (color TEXT PRIMARY KEY, level_of_concern TEXT)")
+    curr.execute("INSERT OR IGNORE INTO AQIColors (color, level_of_concern) VALUES (?,?)", ("Green", "Good"))
+    curr.execute("INSERT OR IGNORE INTO AQIColors (color, level_of_concern) VALUES (?,?)", ("Yellow", "Moderate"))
+    curr.execute("INSERT OR IGNORE INTO AQIColors (color, level_of_concern) VALUES (?,?)", ("Orange", "Unhealthy for Sensitive Groups"))
+    curr.execute("INSERT OR IGNORE INTO AQIColors (color, level_of_concern) VALUES (?,?)", ("Red", "Unhealthy"))
+    curr.execute("INSERT OR IGNORE INTO AQIColors (color, level_of_concern) VALUES (?,?)", ("Purple", "Very Unhealthy"))
+    curr.execute("INSERT OR IGNORE INTO AQIColors (color, level_of_concern) VALUES (?,?)", ("Maroon", "Hazardous"))
+    conn.commit()
 
 def getPollutionData(curr, conn, ):
     countries = []
@@ -33,8 +42,25 @@ def getPollutionData(curr, conn, ):
             name = val.find('td', class_ = 'cityOrCountryInIndicesTable').text 
             if name == "United States":
                 name = "US"
-            aqi = val.find('td', {'style':'text-align: right'}).text 
-            aqi_data.append((name, aqi),)
+            aqis = val.find_all('td', {'style':'text-align: right'})
+            aqi = float(aqis[1].text)
+            if aqi <= 50:
+                level = "Good"
+            elif aqi <= 100:
+                level = "Moderate"
+            elif aqi <= 150:
+                level = "Unhealthy for Sensitive Groups"
+            elif aqi <= 200:
+                level = "Unhealthy"
+            elif aqi <= 300:
+                level = "Very Unhealthy"
+            elif aqi > 301:
+                level = "Hazardous"
+            
+            curr.execute("SELECT color FROM AQIColors WHERE level_of_concern = ?", (level,))
+            color = curr.fetchone()[0]
+
+            aqi_data.append((name, aqi, color),)
         
         curr.execute("SELECT name FROM CountryAQIs")
         table_length = len(curr.fetchall())
@@ -42,7 +68,7 @@ def getPollutionData(curr, conn, ):
         
         for i in range(25):
             if (table_length + i) < len(aqi_data): #need to make sure value is within index of aqi_data
-                curr.execute("INSERT OR IGNORE INTO CountryAQIs (name, aqi) VALUES (?,?)", (aqi_data[table_length + i][0], aqi_data[table_length + i][1]))
+                curr.execute("INSERT OR IGNORE INTO CountryAQIs (name, aqi, color) VALUES (?,?, ?)", (aqi_data[table_length + i][0], aqi_data[table_length + i][1], aqi_data[table_length + i][2]))
                 countries.append(aqi_data[table_length + i][0])
                 
     except:
