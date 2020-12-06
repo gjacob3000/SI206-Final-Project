@@ -3,7 +3,7 @@ import sqlite3
 import os
 import time
 import math
-#import plotly.graph_objects as p
+import plotly.graph_objects as go
 
 
 def setUpDatabase(db_name):
@@ -14,7 +14,7 @@ def setUpDatabase(db_name):
 def writeToFile(global_cases, global_deaths, global_population, total_aqi, color_avg_cases, color_avg_deaths, country_dict, num_data):
     # need to write to file
     f = open("processed_data.txt", "w")
-    f.writelines("----------------- GLOBAL DATA -----------------\n")
+    f.writelines("----------------- ALL COUNTRY DATA -----------------\n")
     f.write("Total Cases: " + str(global_cases) + "\n")
     f.write("Total Deaths: " + str(global_deaths) + "\n")
     f.write("Total Population: " + str(global_population) + "\n")
@@ -47,10 +47,6 @@ def writeToFile(global_cases, global_deaths, global_population, total_aqi, color
 
     f.close()
     
-
-def createPlots():
-    #hi
-    print("hello")
 
 #thinking we could make an histogram with this data
 def aqiColorAverages(country_dict):
@@ -100,6 +96,47 @@ def aqiColorAverages(country_dict):
 
     return color_avg_cases, color_avg_deaths
 
+def createGraphs(country_names, country_cases_by_pop, country_colors, color_avg_cases, color_avg_deaths, country_aqis, country_deaths_by_cases):
+    fig = go.Figure(data=go.Scatter(x=country_names,
+                                y=country_cases_by_pop,
+                                mode='markers',
+                                marker_color=country_colors
+                                )) # hover text goes here
+    fig.update_layout(title='Countries vs Cases/Population')
+    fig.write_html('Countries_vs_CasesbyPopulation.html', auto_open=True)
+
+    fig = go.Figure(data=go.Scatter(x=country_aqis,
+                                y=country_cases_by_pop,
+                                mode='markers',
+                                marker_color=country_colors,
+                                text = country_names
+                                )) # hover text goes here
+    fig.update_layout(title='US AQI vs Cases/Population', xaxis= dict(title = "US AQI"), yaxis = dict(title = "%Cases"))
+    fig.write_html('US_AQI_vs_CasesbyPopulation.html', auto_open=True)
+
+    fig = go.Figure(data=go.Scatter(x=country_aqis,
+                                y=country_deaths_by_cases,
+                                mode='markers',
+                                marker_color=country_colors,
+                                text = country_names
+                                )) # hover text goes here
+    fig.update_layout(title='US AQI vs Mortality Rate', xaxis= dict(title = "US AQI"), yaxis = dict(title = "Deaths/Cases"))
+    fig.write_html('US_AQI_vs_Mortality_Rate.html', auto_open=True)
+
+
+    colors = ["Green", "Yellow", "Orange", "Red"]
+    
+    
+    fig = go.Figure()
+    fig.add_trace(go.Bar(
+        x=colors,
+        y=color_avg_cases,
+        marker_color= colors
+    ))
+    fig.update_layout(title='Average Cases by Air Quality Colors', xaxis= dict(title = "Country Air Quality"), yaxis = dict(title = "Average Cases"))
+    fig.write_html('Average_Cases_by_Air_Quality_Colors.html', auto_open=True)
+
+    print("Graphs created!")
 
 def main():
     #get all data
@@ -116,6 +153,13 @@ def main():
     total_aqi = 0
     aqi_color = ''
     list_all = sorted(list_all)
+
+    #Graph data
+    country_names = []
+    country_cases_by_pop = []
+    country_colors = []
+    country_aqis = []
+    country_deaths_by_cases = []
     for country_data in list_all:
 
         total_cases += country_data[1]
@@ -129,13 +173,20 @@ def main():
         deaths_by_cases = country_data[2]/country_data[1]
         country_dict[country_data[0]] = (cases_by_aqi,cases_by_pop, deaths_by_cases, aqi_color)
 
+        #Graph data:
+        country_names.append(country_data[0])
+        country_cases_by_pop.append(cases_by_pop)
+        country_colors.append(country_data[9])
+        country_aqis.append(country_data[8])
+        country_deaths_by_cases.append(deaths_by_cases)
     
     color_data = aqiColorAverages(country_dict)
     color_avg_cases = color_data[0]
     color_avg_deaths = color_data[1]
     
     writeToFile(total_cases,total_deaths,total_population,total_aqi,color_avg_cases,color_avg_deaths,country_dict,num_elements)   
-    
+
+    createGraphs(country_names, country_cases_by_pop,country_colors, color_avg_cases, color_avg_deaths,country_aqis,country_deaths_by_cases)
     #get average number of deaths per country
 
 if __name__ == "__main__":

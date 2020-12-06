@@ -44,6 +44,7 @@ def getPollutionData(curr, conn, ):
                 name = "US"
             aqis = val.find_all('td', {'style':'text-align: right'})
             aqi = float(aqis[1].text)
+            level = ""
             if aqi <= 50:
                 level = "Good"
             elif aqi <= 100:
