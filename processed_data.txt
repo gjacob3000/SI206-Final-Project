@@ -21,519 +21,519 @@ ORANGE:
 RED:
      Average Cases: 737.5414753390507
      Average Deaths: 0.005442028416333187
----------------- COUNTRY DATA -----------------
+---------------- INDIVIDUAL COUNTRY DATA -----------------
 Afghanistan:
      Cases by AQI: 278.86255924170615
-     AQI Color Status: Red
+     AQI Status: Unhealthy
      Cases by Population: 0.0013248492172027416
      Mortality Rate: 0.03959891230455472
 Albania:
      Cases by AQI: 306.3749363960166
-     AQI Color Status: Orange
+     AQI Status: Unhealthy for Sensitive Groups
      Cases by Population: 0.014384064907802812
      Mortality Rate: 0.02109234127360729
 Algeria:
      Cases by AQI: 759.856316803925
-     AQI Color Status: Orange
+     AQI Status: Unhealthy for Sensitive Groups
      Cases by Population: 0.0020990779304645405
      Mortality Rate: 0.02873284907183212
 Argentina:
      Cases by AQI: 16859.42280945758
-     AQI Color Status: Yellow
+     AQI Status: Moderate
      Cases by Population: 0.03285739316588467
      Mortality Rate: 0.02716290248179779
 Armenia:
      Cases by AQI: 1312.4674115456237
-     AQI Color Status: Orange
+     AQI Status: Unhealthy for Sensitive Groups
      Cases by Population: 0.0481014861198792
      Mortality Rate: 0.016380649692463767
 Australia:
      Cases by AQI: 757.4099160119209
-     AQI Color Status: Green
+     AQI Status: Good
      Cases by Population: 0.0011433684486830385
      Mortality Rate: 0.03247961081699814
 Austria:
      Cases by AQI: 8451.06801573918
-     AQI Color Status: Green
+     AQI Status: Good
      Cases by Population: 0.034421683683719666
      Mortality Rate: 0.012494637316296905
 Azerbaijan:
      Cases by AQI: 1061.7157776948898
-     AQI Color Status: Orange
+     AQI Status: Unhealthy for Sensitive Groups
      Cases by Population: 0.014481985357751529
      Mortality Rate: 0.011192850066398263
 Bahrain:
      Cases by AQI: 688.6251080889867
-     AQI Color Status: Orange
+     AQI Status: Unhealthy for Sensitive Groups
      Cases by Population: 0.05869016417166471
      Mortality Rate: 0.0038926940639269405
 Bangladesh:
      Cases by AQI: 3095.1665365599792
-     AQI Color Status: Red
+     AQI Status: Unhealthy
      Cases by Population: 0.002889352762791267
      Mortality Rate: 0.014306762031068393
 Belarus:
      Cases by AQI: 2011.060354374308
-     AQI Color Status: Yellow
+     AQI Status: Moderate
      Cases by Population: 0.015343664326305208
      Mortality Rate: 0.008246202135201922
 Belgium:
      Cases by AQI: 6434.162102957284
-     AQI Color Status: Yellow
+     AQI Status: Moderate
      Cases by Population: 0.0513974740089888
      Mortality Rate: 0.029180902187290934
 Bolivia:
      Cases by AQI: 1104.293313069909
-     AQI Color Status: Orange
+     AQI Status: Unhealthy for Sensitive Groups
      Cases by Population: 0.013149679684389591
      Mortality Rate: 0.06184070187510752
 Brazil:
      Cases by AQI: 70016.80240034292
-     AQI Color Status: Yellow
+     AQI Status: Moderate
      Cases by Population: 0.031219942475708074
      Mortality Rate: 0.02693064918591582
 Bulgaria:
      Cases by AQI: 1335.6349873843565
-     AQI Color Status: Orange
+     AQI Status: Unhealthy for Sensitive Groups
      Cases by Population: 0.02241589504854987
      Mortality Rate: 0.029280825152543655
 Cambodia:
      Cases by AQI: 2.499637733661788
-     AQI Color Status: Orange
+     AQI Status: Unhealthy for Sensitive Groups
      Cases by Population: 2.1555261473756346e-05
      Mortality Rate: 0.0
 Canada:
      Cases by AQI: 8976.93828245113
-     AQI Color Status: Green
+     AQI Status: Good
      Cases by Population: 0.011159834512694734
      Mortality Rate: 0.030759444118222744
 Chile:
      Cases by AQI: 3892.6142697881824
-     AQI Color Status: Orange
+     AQI Status: Unhealthy for Sensitive Groups
      Cases by Population: 0.030943033973487053
      Mortality Rate: 0.027909241266727287
 China:
      Cases by AQI: 646.8401744306776
-     AQI Color Status: Orange
+     AQI Status: Unhealthy for Sensitive Groups
      Cases by Population: 6.629857864748299e-05
      Mortality Rate: 0.05078706032167278
 Colombia:
      Cases by AQI: 12069.304898724013
-     AQI Color Status: Orange
+     AQI Status: Unhealthy for Sensitive Groups
      Cases by Population: 0.02756730961183305
      Mortality Rate: 0.027699841860939652
 Costa Rica:
      Cases by AQI: 1809.4068757083492
-     AQI Color Status: Yellow
+     AQI Status: Moderate
      Cases by Population: 0.029288986089642623
      Mortality Rate: 0.012339492640150329
 Croatia:
      Cases by AQI: 2968.6732434064825
-     AQI Color Status: Green
+     AQI Status: Good
      Cases by Population: 0.03519732044542439
      Mortality Rate: 0.014255293176176978
 Cyprus:
      Cases by AQI: 126.54810370687808
-     AQI Color Status: Yellow
+     AQI Status: Moderate
      Cases by Population: 0.010013979895739988
      Mortality Rate: 0.004825601083643752
 Denmark:
      Cases by AQI: 2685.7572115384614
-     AQI Color Status: Green
+     AQI Status: Good
      Cases by Population: 0.015589291871651617
      Mortality Rate: 0.009823006869392048
 Dominican Republic:
      Cases by AQI: 1112.5301386377337
-     AQI Color Status: Orange
+     AQI Status: Unhealthy for Sensitive Groups
      Cases by Population: 0.013713664663075074
      Mortality Rate: 0.015881615929023738
 Ecuador:
      Cases by AQI: 2024.961352159126
-     AQI Color Status: Yellow
+     AQI Status: Moderate
      Cases by Population: 0.011818567111971724
      Mortality Rate: 0.06970613084150203
 Egypt:
      Cases by AQI: 779.108136761198
-     AQI Color Status: Red
+     AQI Status: Unhealthy
      Cases by Population: 0.001205322419570025
      Mortality Rate: 0.057253174353435445
 Estonia:
      Cases by AQI: 462.07775653282346
-     AQI Color Status: Green
+     AQI Status: Good
      Cases by Population: 0.01107181253970581
      Mortality Rate: 0.008689655172413793
 Ethiopia:
      Cases by AQI: 795.3664940041155
-     AQI Color Status: Orange
+     AQI Status: Unhealthy for Sensitive Groups
      Cases by Population: 0.0010679662359898685
      Mortality Rate: 0.015469573828407275
 Finland:
      Cases by AQI: 1360.9
-     AQI Color Status: Green
+     AQI Status: Good
      Cases by Population: 0.004927912665611849
      Mortality Rate: 0.01524726284076714
 France:
      Cases by AQI: 31952.97274979356
-     AQI Color Status: Yellow
+     AQI Status: Moderate
      Cases by Population: 0.03572974992069813
      Mortality Rate: 0.02362877594593279
 Georgia:
      Cases by AQI: 1243.7401698647375
-     AQI Color Status: Orange
+     AQI Status: Unhealthy for Sensitive Groups
      Cases by Population: 0.04042728372589282
      Mortality Rate: 0.009244154431756389
 Germany:
      Cases by AQI: 24609.654148100995
-     AQI Color Status: Green
+     AQI Status: Good
      Cases by Population: 0.014124873176661817
      Mortality Rate: 0.016052896358417834
 Ghana:
      Cases by AQI: 328.2464873038876
-     AQI Color Status: Red
+     AQI Status: Unhealthy
      Cases by Population: 0.0018067791605420186
      Mortality Rate: 0.006238482800982801
 Greece:
      Cases by AQI: 1255.264599539827
-     AQI Color Status: Yellow
+     AQI Status: Moderate
      Cases by Population: 0.010266158639606738
      Mortality Rate: 0.02532993506040081
 Guatemala:
      Cases by AQI: 982.228490832158
-     AQI Color Status: Orange
+     AQI Status: Unhealthy for Sensitive Groups
      Cases by Population: 0.007411356476538302
      Mortality Rate: 0.03381677197013211
 Hungary:
      Cases by AQI: 2884.322084073416
-     AQI Color Status: Yellow
+     AQI Status: Moderate
      Cases by Population: 0.02505575494630028
      Mortality Rate: 0.02342547243011565
 Iceland:
      Cases by AQI: 195.92128801431127
-     AQI Color Status: Green
+     AQI Status: Good
      Cases by Population: 0.016345048876949483
      Mortality Rate: 0.004930606281957633
 India:
      Cases by AQI: 68308.05488411774
-     AQI Color Status: Orange
+     AQI Status: Unhealthy for Sensitive Groups
      Cases by Population: 0.007174696522359609
      Mortality Rate: 0.01453964739117407
 Indonesia:
      Cases by AQI: 4933.809647527496
-     AQI Color Status: Orange
+     AQI Status: Unhealthy for Sensitive Groups
      Cases by Population: 0.0021580515324328073
      Mortality Rate: 0.030873764935308853
 Iran:
      Cases by AQI: 7326.872685844489
-     AQI Color Status: Orange
+     AQI Status: Unhealthy for Sensitive Groups
      Cases by Population: 0.01267805142425615
      Mortality Rate: 0.04860707531492168
 Iraq:
      Cases by AQI: 4424.76205458979
-     AQI Color Status: Orange
+     AQI Status: Unhealthy for Sensitive Groups
      Cases by Population: 0.01469694615894011
      Mortality Rate: 0.022063215530114484
 Ireland:
      Cases by AQI: 1292.035864978903
-     AQI Color Status: Yellow
+     AQI Status: Moderate
      Cases by Population: 0.015433913026494769
      Mortality Rate: 0.028384428025200366
 Israel:
      Cases by AQI: 3391.542484950163
-     AQI Color Status: Orange
+     AQI Status: Unhealthy for Sensitive Groups
      Cases by Population: 0.041298096392868175
      Mortality Rate: 0.008441360045393042
 Italy:
      Cases by AQI: 17845.931952662722
-     AQI Color Status: Yellow
+     AQI Status: Moderate
      Cases by Population: 0.02845252434724452
      Mortality Rate: 0.03484554504336746
 Jamaica:
      Cases by AQI: 92.9429555574225
-     AQI Color Status: Orange
+     AQI Status: Unhealthy for Sensitive Groups
      Cases by Population: 0.003827631674093234
      Mortality Rate: 0.023592154026936634
 Japan:
      Cases by AQI: 2527.8126964173475
-     AQI Color Status: Yellow
+     AQI Status: Moderate
      Cases by Population: 0.0012618793899961916
      Mortality Rate: 0.013855908497544601
 Jordan:
      Cases by AQI: 1756.1035120147874
-     AQI Color Status: Orange
+     AQI Status: Unhealthy for Sensitive Groups
      Cases by Population: 0.024479938010913437
      Mortality Rate: 0.012672990531044617
 Kazakhstan:
      Cases by AQI: 1370.3464700007682
-     AQI Color Status: Orange
+     AQI Status: Unhealthy for Sensitive Groups
      Cases by Population: 0.009798566826804737
      Mortality Rate: 0.013925484084360179
 Kenya:
      Cases by AQI: 647.2743323769587
-     AQI Color Status: Orange
+     AQI Status: Unhealthy for Sensitive Groups
      Cases by Population: 0.0017703067264049949
      Mortality Rate: 0.017253136933987997
 Kuwait:
      Cases by AQI: 1229.849598359255
-     AQI Color Status: Orange
+     AQI Status: Unhealthy for Sensitive Groups
      Cases by Population: 0.03479173838542855
      Mortality Rate: 0.0061563262158049435
 Laos:
      Cases by AQI: 0.2809393459155741
-     AQI Color Status: Orange
+     AQI Status: Unhealthy for Sensitive Groups
      Cases by Population: 5.6866564792889055e-06
      Mortality Rate: 0.0
 Latvia:
      Cases by AQI: 373.9341608202914
-     AQI Color Status: Yellow
+     AQI Status: Moderate
      Cases by Population: 0.010661804305343981
      Mortality Rate: 0.012171068456246693
 Lebanon:
      Cases by AQI: 845.2605740181269
-     AQI Color Status: Red
+     AQI Status: Unhealthy
      Cases by Population: 0.02207943400888833
      Mortality Rate: 0.00802710450873078
 Lithuania:
      Cases by AQI: 1602.079186020792
-     AQI Color Status: Green
+     AQI Status: Good
      Cases by Population: 0.02505970839674954
      Mortality Rate: 0.008435731050669613
 Luxembourg:
      Cases by AQI: 998.839719373988
-     AQI Color Status: Green
+     AQI Status: Good
      Cases by Population: 0.06344448157955626
      Mortality Rate: 0.009320042142799254
 Malaysia:
      Cases by AQI: 663.5577459549935
-     AQI Color Status: Orange
+     AQI Status: Unhealthy for Sensitive Groups
      Cases by Population: 0.0022564635812552035
      Mortality Rate: 0.005325186731876848
 Malta:
      Cases by AQI: 76.44297763109644
-     AQI Color Status: Orange
+     AQI Status: Unhealthy for Sensitive Groups
      Cases by Population: 0.024192556315062612
      Mortality Rate: 0.014295308452460903
 Mauritius:
      Cases by AQI: 5.291666666666667
-     AQI Color Status: Yellow
+     AQI Status: Moderate
      Cases by Population: 0.000401537223607227
      Mortality Rate: 0.01968503937007874
 Mexico:
      Cases by AQI: 10658.52759605639
-     AQI Color Status: Orange
+     AQI Status: Unhealthy for Sensitive Groups
      Cases by Population: 0.008955873804253773
      Mortality Rate: 0.09410945996179015
 Monaco:
      Cases by AQI: 3.987089424719955
-     AQI Color Status: Red
+     AQI Status: Unhealthy
      Cases by Population: 0.01628117327820132
      Mortality Rate: 0.004761904761904762
 Mongolia:
      Cases by AQI: 4.981953730548488
-     AQI Color Status: Red
+     AQI Status: Unhealthy
      Cases by Population: 0.00027376353658270926
      Mortality Rate: 0.0
 Montenegro:
      Cases by AQI: 476.86139747995423
-     AQI Color Status: Yellow
+     AQI Status: Moderate
      Cases by Population: 0.0038540114810803492
      Mortality Rate: 0.013932260389142446
 Morocco:
      Cases by AQI: 3047.0193801619102
-     AQI Color Status: Orange
+     AQI Status: Unhealthy for Sensitive Groups
      Cases by Population: 0.01042597590682375
      Mortality Rate: 0.016467178358649564
 Nepal:
      Cases by AQI: 1588.6423841059602
-     AQI Color Status: Red
+     AQI Status: Unhealthy
      Cases by Population: 0.008185805028889612
      Mortality Rate: 0.006573983367030035
 Netherlands:
      Cases by AQI: 13156.853985422054
-     AQI Color Status: Green
+     AQI Status: Good
      Cases by Population: 0.032845916673329055
      Mortality Rate: 0.017411863943341297
 New Zealand:
      Cases by AQI: 51.8981018981019
-     AQI Color Status: Green
+     AQI Status: Good
      Cases by Population: 0.0004415810386207031
      Mortality Rate: 0.01203079884504331
 Nigeria:
      Cases by AQI: 442.298272750709
-     AQI Color Status: Red
+     AQI Status: Unhealthy
      Cases by Population: 0.00035951766075043484
      Mortality Rate: 0.01717982718172148
 North Macedonia:
      Cases by AQI: 454.0041067761807
-     AQI Color Status: Orange
+     AQI Status: Unhealthy for Sensitive Groups
      Cases by Population: 0.03277173913043478
      Mortality Rate: 0.028297904417307403
 Norway:
      Cases by AQI: 1172.3594811612106
-     AQI Color Status: Green
+     AQI Status: Good
      Cases by Population: 0.007155185591690553
      Mortality Rate: 0.009325360238139143
 Oman:
      Cases by AQI: 2050.2803430079157
-     AQI Color Status: Yellow
+     AQI Status: Moderate
      Cases by Population: 0.026816646686490107
      Mortality Rate: 0.011541957226391269
 Pakistan:
      Cases by AQI: 3220.255630893929
-     AQI Color Status: Orange
+     AQI Status: Unhealthy for Sensitive Groups
      Cases by Population: 0.0020972463879892368
      Mortality Rate: 0.020094822975331023
 Panama:
      Cases by AQI: 1684.196740395809
-     AQI Color Status: Orange
+     AQI Status: Unhealthy for Sensitive Groups
      Cases by Population: 0.04235776866515216
      Mortality Rate: 0.01816747020569447
 Peru:
      Cases by AQI: 6530.7412888470335
-     AQI Color Status: Orange
+     AQI Status: Unhealthy for Sensitive Groups
      Cases by Population: 0.030183284971453096
      Mortality Rate: 0.03728137939558742
 Philippines:
      Cases by AQI: 3357.3651134273455
-     AQI Color Status: Orange
+     AQI Status: Unhealthy for Sensitive Groups
      Cases by Population: 0.004175342879383336
      Mortality Rate: 0.01946268738486403
 Poland:
      Cases by AQI: 9394.697914810195
-     AQI Color Status: Orange
+     AQI Status: Unhealthy for Sensitive Groups
      Cases by Population: 0.027619945889403374
      Mortality Rate: 0.01883857406952469
 Portugal:
      Cases by AQI: 6552.333950236479
-     AQI Color Status: Green
+     AQI Status: Good
      Cases by Population: 0.03084755456843725
      Mortality Rate: 0.015302535777052474
 Qatar:
      Cases by AQI: 1319.08087194489
-     AQI Color Status: Orange
+     AQI Status: Unhealthy for Sensitive Groups
      Cases by Population: 0.05296393505483268
      Mortality Rate: 0.0017097930363491984
 Romania:
      Cases by AQI: 5061.6847555511295
-     AQI Color Status: Orange
+     AQI Status: Unhealthy for Sensitive Groups
      Cases by Population: 0.025831449544003227
      Mortality Rate: 0.023971908841436428
 Russia:
      Cases by AQI: 22364.65021339766
-     AQI Color Status: Orange
+     AQI Status: Unhealthy for Sensitive Groups
      Cases by Population: 0.016740510578273506
      Mortality Rate: 0.017518633357422767
 Saudi Arabia:
      Cases by AQI: 3183.784743806056
-     AQI Color Status: Orange
+     AQI Status: Unhealthy for Sensitive Groups
      Cases by Population: 0.01088480422420002
      Mortality Rate: 0.01660688485632841
 Serbia:
      Cases by AQI: 2006.5966031716243
-     AQI Color Status: Orange
+     AQI Status: Unhealthy for Sensitive Groups
      Cases by Population: 0.0043583067286530495
      Mortality Rate: 0.008842936172799671
 Singapore:
      Cases by AQI: 1029.60410038883
-     AQI Color Status: Yellow
+     AQI Status: Moderate
      Cases by Population: 0.01020434259545365
      Mortality Rate: 0.0004978113466655223
 Slovakia:
      Cases by AQI: 1717.9288796310075
-     AQI Color Status: Yellow
+     AQI Status: Moderate
      Cases by Population: 0.021194780439755624
      Mortality Rate: 0.00849630181358369
 Slovenia:
      Cases by AQI: 2053.1605715669652
-     AQI Color Status: Green
+     AQI Status: Good
      Cases by Population: 0.04075768181940561
      Mortality Rate: 0.020053081686818047
 South Africa:
      Cases by AQI: 8262.961443806398
-     AQI Color Status: Yellow
+     AQI Status: Moderate
      Cases by Population: 0.014207411951332679
      Mortality Rate: 0.027256007664394816
 Spain:
      Cases by AQI: 25494.05266343826
-     AQI Color Status: Yellow
+     AQI Status: Moderate
      Cases by Population: 0.036342825515662286
      Mortality Rate: 0.027455009862600296
 Sri Lanka:
      Cases by AQI: 264.47790189412336
-     AQI Color Status: Orange
+     AQI Status: Unhealthy for Sensitive Groups
      Cases by Population: 0.001304215560180653
      Mortality Rate: 0.004774496841486705
 Sweden:
      Cases by AQI: 9432.262428136624
-     AQI Color Status: Green
+     AQI Status: Good
      Cases by Population: 0.02814250979824737
      Mortality Rate: 0.02533774093620927
 Switzerland:
      Cases by AQI: 9770.192853091323
-     AQI Color Status: Green
+     AQI Status: Good
      Cases by Population: 0.040643793862792675
      Mortality Rate: 0.015425388319782175
 Syria:
      Cases by AQI: 67.08221298785952
-     AQI Color Status: Orange
+     AQI Status: Unhealthy for Sensitive Groups
      Cases by Population: 0.0004506327029839515
      Mortality Rate: 0.05307907202720758
 Tanzania:
      Cases by AQI: 4.534925160370634
-     AQI Color Status: Orange
+     AQI Status: Unhealthy for Sensitive Groups
      Cases by Population: 8.88151860497551e-06
      Mortality Rate: 0.0412573673870334
 Thailand:
      Cases by AQI: 30.77853363567649
-     AQI Color Status: Orange
+     AQI Status: Unhealthy for Sensitive Groups
      Cases by Population: 5.898242597470161e-05
      Mortality Rate: 0.014734774066797643
 Tunisia:
      Cases by AQI: 827.6478232618583
-     AQI Color Status: Orange
+     AQI Status: Unhealthy for Sensitive Groups
      Cases by Population: 0.008836184339627894
      Mortality Rate: 0.03416094210009814
 Turkey:
      Cases by AQI: 6936.993566336289
-     AQI Color Status: Orange
+     AQI Status: Unhealthy for Sensitive Groups
      Cases by Population: 0.009881637282398345
      Mortality Rate: 0.018429789457984968
 US:
      Cases by AQI: 228152.83676703644
-     AQI Color Status: Yellow
+     AQI Status: Moderate
      Cases by Population: 0.04437054745418228
      Mortality Rate: 0.01939735951461347
 Ukraine:
      Cases by AQI: 7294.672930331502
-     AQI Color Status: Orange
+     AQI Status: Unhealthy for Sensitive Groups
      Cases by Population: 0.018609908561724755
      Mortality Rate: 0.016861789704551117
 United Arab Emirates:
      Cases by AQI: 2035.962364966895
-     AQI Color Status: Yellow
+     AQI Status: Moderate
      Cases by Population: 0.018646095352784452
      Mortality Rate: 0.0033604144320956665
 United Kingdom:
      Cases by AQI: 25201.576208178438
-     AQI Color Status: Yellow
+     AQI Status: Moderate
      Cases by Population: 0.025608422645060556
      Mortality Rate: 0.03605781428670892
 Uruguay:
      Cases by AQI: 83.23234821318165
-     AQI Color Status: Yellow
+     AQI Status: Moderate
      Cases by Population: 0.0019472047443407825
      Mortality Rate: 0.011885306789481503
 Venezuela:
      Cases by AQI: 793.7418812562084
-     AQI Color Status: Orange
+     AQI Status: Unhealthy for Sensitive Groups
      Cases by Population: 0.0032484844997500554
      Mortality Rate: 0.008789241121711255
 Vietnam:
      Cases by AQI: 8.860759493670885
-     AQI Color Status: Red
+     AQI Status: Unhealthy
      Cases by Population: 1.4287089913419189e-05
      Mortality Rate: 0.02564102564102564
 Zimbabwe:
      Cases by AQI: 81.49435944985319
-     AQI Color Status: Orange
+     AQI Status: Unhealthy for Sensitive Groups
      Cases by Population: 0.0006380557322050993
      Mortality Rate: 0.026642647198255428

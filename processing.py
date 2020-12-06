@@ -37,11 +37,11 @@ def writeToFile(global_cases, global_deaths, global_population, total_aqi, color
     f.write("RED:" + "\n")
     f.write("     Average Cases: " + str(color_avg_cases[3]) + "\n")
     f.write("     Average Deaths: " + str(color_avg_deaths[3]) + "\n")
-    f.write("---------------- COUNTRY DATA -----------------\n")
+    f.write("---------------- INDIVIDUAL COUNTRY DATA -----------------\n")
     for item in country_dict.items():
         f.write(item[0]+":\n")
         f.write("     Cases by AQI: " + str(item[1][0]) + "\n")
-        f.write("     AQI Color Status: " + str(item[1][3]) + "\n")
+        f.write("     AQI Status: " + str(item[1][4]) + "\n")
         f.write("     Cases by Population: " + str(item[1][1]) + "\n")
         f.write("     Mortality Rate: " + str(item[1][2]) + "\n")
 
@@ -141,10 +141,10 @@ def createGraphs(country_names, country_cases_by_pop, country_colors, color_avg_
 def main():
     #get all data
     curr,conn = setUpDatabase("covid_data.db")
-    curr.execute("SELECT * FROM CountryCases JOIN CountryAQIs ON CountryCases.name = CountryAQIs.name")
+    curr.execute("SELECT * FROM CountryCases JOIN CountryAQIs ON CountryCases.name = CountryAQIs.name JOIN AQIColors ON CountryAQIs.color = AQIColors.color")
     list_all = curr.fetchall()
-    # name cases deaths population LE lat lon | name aqi color
-    #  0     1     2         3      4  5   6      7   8    9
+    # name cases deaths population LE lat lon | name aqi color | color level_of_concern
+    #  0     1     2         3      4  5   6      7   8    9      10         11
     total_cases = 0
     num_elements = len(list_all)
     country_dict = {}
@@ -167,11 +167,12 @@ def main():
         total_deaths += country_data[2]
         total_aqi += country_data[8]
         aqi_color = country_data[9]
+        aqi_status = country_data[11]
 
         cases_by_aqi = country_data[1]/country_data[8]
         cases_by_pop = country_data[1]/country_data[3]
         deaths_by_cases = country_data[2]/country_data[1]
-        country_dict[country_data[0]] = (cases_by_aqi,cases_by_pop, deaths_by_cases, aqi_color)
+        country_dict[country_data[0]] = (cases_by_aqi,cases_by_pop, deaths_by_cases, aqi_color,aqi_status)
 
         #Graph data:
         country_names.append(country_data[0])
