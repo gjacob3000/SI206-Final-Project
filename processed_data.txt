@@ -1,539 +1,539 @@
 ----------------- ALL COUNTRY DATA -----------------
-Total Cases: 64212168
-Total Deaths: 1486962
+Total Cases: 66043854
+Total Deaths: 1516191
 Total Population: 6694195021
-Mortality Rate: 0.023157012857749952
-% Population Infected: 0.9592216509761585
+Mortality Rate: 0.02295733680230109
+% Population Infected: 0.9865839550956818
 ------------------ AVERAGES -------------------
-Average Cases Per Country: 623419.1067961165
-Average Deaths Per Country: 14436.52427184466
+Average Cases Per Country: 641202.4660194175
+Average Deaths Per Country: 14720.300970873786
 Average AQI Per Country: 101.03533980582529
 ------------------ AVERAGES BASED ON AQI COLOR -------------------
 GREEN:
-     Average Cases: 5292.132229927937
-     Average Deaths: 0.022962197752773965
+     Average Cases: 5531.062385969515
+     Average Deaths: 0.023939433614442188
 YELLOW:
-     Average Cases: 18077.00905159226
-     Average Deaths: 0.020495824709587027
+     Average Cases: 18692.158337446683
+     Average Deaths: 0.021039195702056052
 ORANGE:
-     Average Cases: 4202.399230136475
-     Average Deaths: 0.0157214543668609
+     Average Cases: 4300.886838417823
+     Average Deaths: 0.016121484709780663
 RED:
-     Average Cases: 737.5414753390507
-     Average Deaths: 0.005442028416333187
+     Average Cases: 748.9387624988987
+     Average Deaths: 0.00558954198621386
 ---------------- INDIVIDUAL COUNTRY DATA -----------------
 Afghanistan:
-     Cases by AQI: 278.86255924170615
+     Cases by AQI: 282.6777251184834
      AQI Status: Unhealthy
-     Cases by Population: 0.0013248492172027416
-     Mortality Rate: 0.03959891230455472
+     Cases by Population: 0.0013429747036039687
+     Mortality Rate: 0.03994467264649174
 Albania:
-     Cases by AQI: 306.3749363960166
+     Cases by AQI: 323.00646943374284
      AQI Status: Unhealthy for Sensitive Groups
-     Cases by Population: 0.014384064907802812
-     Mortality Rate: 0.02109234127360729
+     Cases by Population: 0.015164902444792773
+     Mortality Rate: 0.02106400216041048
 Algeria:
-     Cases by AQI: 759.856316803925
+     Cases by AQI: 783.3888207464518
      AQI Status: Unhealthy for Sensitive Groups
-     Cases by Population: 0.0020990779304645405
-     Mortality Rate: 0.02873284907183212
+     Cases by Population: 0.0021640856938823626
+     Mortality Rate: 0.028395365482687663
 Argentina:
-     Cases by AQI: 16859.42280945758
+     Cases by AQI: 16994.772832637922
      AQI Status: Moderate
-     Cases by Population: 0.03285739316588467
-     Mortality Rate: 0.02716290248179779
+     Cases by Population: 0.033121177340284365
+     Mortality Rate: 0.027202997458243793
 Armenia:
-     Cases by AQI: 1312.4674115456237
+     Cases by AQI: 1330.8007448789572
      AQI Status: Unhealthy for Sensitive Groups
-     Cases by Population: 0.0481014861198792
-     Mortality Rate: 0.016380649692463767
+     Cases by Population: 0.048773396577317475
+     Mortality Rate: 0.016595768498824583
 Australia:
-     Cases by AQI: 757.4099160119209
+     Cases by AQI: 758.2497968030344
      AQI Status: Good
-     Cases by Population: 0.0011433684486830385
-     Mortality Rate: 0.03247961081699814
+     Cases by Population: 0.0011446363132526897
+     Mortality Rate: 0.032443634544609995
 Austria:
-     Cases by AQI: 8451.06801573918
+     Cases by AQI: 8658.516020236088
      AQI Status: Good
-     Cases by Population: 0.034421683683719666
-     Mortality Rate: 0.012494637316296905
+     Cases by Population: 0.03526663127830921
+     Mortality Rate: 0.012990554094848573
 Azerbaijan:
-     Cases by AQI: 1061.7157776948898
+     Cases by AQI: 1149.958970533383
      AQI Status: Unhealthy for Sensitive Groups
-     Cases by Population: 0.014481985357751529
-     Mortality Rate: 0.011192850066398263
+     Cases by Population: 0.015685637647239827
+     Mortality Rate: 0.011112408531838704
 Bahrain:
-     Cases by AQI: 688.6251080889867
+     Cases by AQI: 694.0806540366324
      AQI Status: Unhealthy for Sensitive Groups
-     Cases by Population: 0.05869016417166471
-     Mortality Rate: 0.0038926940639269405
+     Cases by Population: 0.05915512962754525
+     Mortality Rate: 0.0038847486805445443
 Bangladesh:
-     Cases by AQI: 3095.1665365599792
+     Cases by AQI: 3135.2133749674736
      AQI Status: Unhealthy
-     Cases by Population: 0.002889352762791267
-     Mortality Rate: 0.014306762031068393
+     Cases by Population: 0.002926736677946395
+     Mortality Rate: 0.014329435931485958
 Belarus:
-     Cases by AQI: 2011.060354374308
+     Cases by AQI: 2084.7452934662238
      AQI Status: Moderate
-     Cases by Population: 0.015343664326305208
-     Mortality Rate: 0.008246202135201922
+     Cases by Population: 0.0159058538045431
+     Mortality Rate: 0.008114102070357631
 Belgium:
-     Cases by AQI: 6434.162102957284
+     Cases by AQI: 6490.854326396496
      AQI Status: Moderate
-     Cases by Population: 0.0513974740089888
-     Mortality Rate: 0.029180902187290934
+     Cases by Population: 0.05185034371200567
+     Mortality Rate: 0.029337765665735763
 Bolivia:
-     Cases by AQI: 1104.293313069909
+     Cases by AQI: 1106.8161094224924
      AQI Status: Unhealthy for Sensitive Groups
-     Cases by Population: 0.013149679684389591
-     Mortality Rate: 0.06184070187510752
+     Cases by Population: 0.01317972058344493
+     Mortality Rate: 0.0617684011067096
 Brazil:
-     Cases by AQI: 70016.80240034292
+     Cases by AQI: 70980.61508786971
      AQI Status: Moderate
-     Cases by Population: 0.031219942475708074
-     Mortality Rate: 0.02693064918591582
+     Cases by Population: 0.03164969898600819
+     Mortality Rate: 0.026769230444068468
 Bulgaria:
-     Cases by AQI: 1335.6349873843565
+     Cases by AQI: 1380.866274179983
      AQI Status: Unhealthy for Sensitive Groups
-     Cases by Population: 0.02241589504854987
-     Mortality Rate: 0.029280825152543655
+     Cases by Population: 0.023175009467757468
+     Mortality Rate: 0.030514358802570272
 Cambodia:
-     Cases by AQI: 2.499637733661788
+     Cases by AQI: 2.5358643674829735
      AQI Status: Unhealthy for Sensitive Groups
-     Cases by Population: 2.1555261473756346e-05
+     Cases by Population: 2.18676565675789e-05
      Mortality Rate: 0.0
 Canada:
-     Cases by AQI: 8976.93828245113
+     Cases by AQI: 9454.18405446958
      AQI Status: Good
-     Cases by Population: 0.011159834512694734
-     Mortality Rate: 0.030759444118222744
+     Cases by Population: 0.01175313076471652
+     Mortality Rate: 0.02988042718184965
 Chile:
-     Cases by AQI: 3892.6142697881824
+     Cases by AQI: 3926.51895206243
      AQI Status: Unhealthy for Sensitive Groups
-     Cases by Population: 0.030943033973487053
-     Mortality Rate: 0.027909241266727287
+     Cases by Population: 0.03121254789466204
+     Mortality Rate: 0.02782440811024712
 China:
-     Cases by AQI: 646.8401744306776
+     Cases by AQI: 649.0620890150204
      AQI Status: Unhealthy for Sensitive Groups
-     Cases by Population: 6.629857864748299e-05
-     Mortality Rate: 0.05078706032167278
+     Cases by Population: 6.65263161700444e-05
+     Mortality Rate: 0.050613202516796414
 Colombia:
-     Cases by AQI: 12069.304898724013
+     Cases by AQI: 12287.85580440796
      AQI Status: Unhealthy for Sensitive Groups
-     Cases by Population: 0.02756730961183305
-     Mortality Rate: 0.027699841860939652
+     Cases by Population: 0.02806649830028626
+     Mortality Rate: 0.027590588918742283
 Costa Rica:
-     Cases by AQI: 1809.4068757083492
+     Cases by AQI: 1856.5671829744365
      AQI Status: Moderate
-     Cases by Population: 0.029288986089642623
-     Mortality Rate: 0.012339492640150329
+     Cases by Population: 0.030052373032647888
+     Mortality Rate: 0.012521196500033914
 Croatia:
-     Cases by AQI: 2968.6732434064825
+     Cases by AQI: 3117.6162673646063
      AQI Status: Good
-     Cases by Population: 0.03519732044542439
-     Mortality Rate: 0.014255293176176978
+     Cases by Population: 0.0369632255863853
+     Mortality Rate: 0.01483997623537313
 Cyprus:
-     Cases by AQI: 126.54810370687808
+     Cases by AQI: 142.33983286908077
      AQI Status: Moderate
-     Cases by Population: 0.010013979895739988
-     Mortality Rate: 0.004825601083643752
+     Cases by Population: 0.0112636079321708
+     Mortality Rate: 0.005118169501731146
 Denmark:
-     Cases by AQI: 2685.7572115384614
+     Cases by AQI: 2864.513221153846
      AQI Status: Good
-     Cases by Population: 0.015589291871651617
-     Mortality Rate: 0.009823006869392048
+     Cases by Population: 0.016626868758994207
+     Mortality Rate: 0.009451280276090674
 Dominican Republic:
-     Cases by AQI: 1112.5301386377337
+     Cases by AQI: 1127.411091018686
      AQI Status: Unhealthy for Sensitive Groups
-     Cases by Population: 0.013713664663075074
-     Mortality Rate: 0.015881615929023738
+     Cases by Population: 0.013897095550681814
+     Mortality Rate: 0.01568535721446234
 Ecuador:
-     Cases by AQI: 2024.961352159126
+     Cases by AQI: 2048.3561785014945
      AQI Status: Moderate
-     Cases by Population: 0.011818567111971724
-     Mortality Rate: 0.06970613084150203
+     Cases by Population: 0.011955109631613094
+     Mortality Rate: 0.06940307518918049
 Egypt:
-     Cases by AQI: 779.108136761198
+     Cases by AQI: 787.4834349324146
      AQI Status: Unhealthy
-     Cases by Population: 0.001205322419570025
-     Mortality Rate: 0.057253174353435445
+     Cases by Population: 0.0012182794587537208
+     Mortality Rate: 0.057132279317105183
 Estonia:
-     Cases by AQI: 462.07775653282346
+     Cases by AQI: 494.263862332696
      AQI Status: Good
-     Cases by Population: 0.01107181253970581
-     Mortality Rate: 0.008689655172413793
+     Cases by Population: 0.011843021551092216
+     Mortality Rate: 0.008833010960670535
 Ethiopia:
-     Cases by AQI: 795.3664940041155
+     Cases by AQI: 810.7996877882637
      AQI Status: Unhealthy for Sensitive Groups
-     Cases by Population: 0.0010679662359898685
-     Mortality Rate: 0.015469573828407275
+     Cases by Population: 0.0010886889216941442
+     Mortality Rate: 0.015455166016137783
 Finland:
-     Cases by AQI: 1360.9
+     Cases by AQI: 1412.1
      AQI Status: Good
-     Cases by Population: 0.004927912665611849
-     Mortality Rate: 0.01524726284076714
+     Cases by Population: 0.00511331139327687
+     Mortality Rate: 0.015013101055166065
 France:
-     Cases by AQI: 31952.97274979356
+     Cases by AQI: 32519.55684007707
      AQI Status: Moderate
-     Cases by Population: 0.03572974992069813
-     Mortality Rate: 0.02362877594593279
+     Cases by Population: 0.03636330311192685
+     Mortality Rate: 0.023887888928341833
 Georgia:
-     Cases by AQI: 1243.7401698647375
+     Cases by AQI: 1334.13809374017
      AQI Status: Unhealthy for Sensitive Groups
-     Cases by Population: 0.04042728372589282
-     Mortality Rate: 0.009244154431756389
+     Cases by Population: 0.043365632591107345
+     Mortality Rate: 0.009289768875737552
 Germany:
-     Cases by AQI: 24609.654148100995
+     Cases by AQI: 25850.307659664755
      AQI Status: Good
-     Cases by Population: 0.014124873176661817
-     Mortality Rate: 0.016052896358417834
+     Cases by Population: 0.014836954435567705
+     Mortality Rate: 0.016177128434531014
 Ghana:
-     Cases by AQI: 328.2464873038876
+     Cases by AQI: 329.36802973977694
      AQI Status: Unhealthy
-     Cases by Population: 0.0018067791605420186
-     Mortality Rate: 0.006238482800982801
+     Cases by Population: 0.001812952507643072
+     Mortality Rate: 0.006217239928071316
 Greece:
-     Cases by AQI: 1255.264599539827
+     Cases by AQI: 1293.360359373288
      AQI Status: Moderate
-     Cases by Population: 0.010266158639606738
-     Mortality Rate: 0.02532993506040081
+     Cases by Population: 0.010577724116789831
+     Mortality Rate: 0.02705747808039307
 Guatemala:
-     Cases by AQI: 982.228490832158
+     Cases by AQI: 991.012380504623
      AQI Status: Unhealthy for Sensitive Groups
-     Cases by Population: 0.007411356476538302
-     Mortality Rate: 0.03381677197013211
+     Cases by Population: 0.007477634881431718
+     Mortality Rate: 0.03388865607679109
 Hungary:
-     Cases by AQI: 2884.322084073416
+     Cases by AQI: 3035.725281231498
      AQI Status: Moderate
-     Cases by Population: 0.02505575494630028
-     Mortality Rate: 0.02342547243011565
+     Cases by Population: 0.026370976095500733
+     Mortality Rate: 0.023872027210990493
 Iceland:
-     Cases by AQI: 195.92128801431127
+     Cases by AQI: 196.99463327370304
      AQI Status: Good
-     Cases by Population: 0.016345048876949483
-     Mortality Rate: 0.004930606281957633
+     Cases by Population: 0.01643459443325125
+     Mortality Rate: 0.005085361423901199
 India:
-     Cases by AQI: 68308.05488411774
+     Cases by AQI: 68987.41646523532
      AQI Status: Unhealthy for Sensitive Groups
-     Cases by Population: 0.007174696522359609
-     Mortality Rate: 0.01453964739117407
+     Cases by Population: 0.00724605286798734
+     Mortality Rate: 0.014526106863621047
 Indonesia:
-     Cases by AQI: 4933.809647527496
+     Cases by AQI: 5082.203169654455
      AQI Status: Unhealthy for Sensitive Groups
-     Cases by Population: 0.0021580515324328073
-     Mortality Rate: 0.030873764935308853
+     Cases by Population: 0.0022229589550346643
+     Mortality Rate: 0.030672651241731165
 Iran:
-     Cases by AQI: 7326.872685844489
+     Cases by AQI: 7564.774992879522
      AQI Status: Unhealthy for Sensitive Groups
-     Cases by Population: 0.01267805142425615
-     Mortality Rate: 0.04860707531492168
+     Cases by Population: 0.013089705592666432
+     Mortality Rate: 0.0479265284069891
 Iraq:
-     Cases by AQI: 4424.76205458979
+     Cases by AQI: 4468.953040195076
      AQI Status: Unhealthy for Sensitive Groups
-     Cases by Population: 0.01469694615894011
-     Mortality Rate: 0.022063215530114484
+     Cases by Population: 0.014843727506307183
+     Mortality Rate: 0.021961213648796597
 Ireland:
-     Cases by AQI: 1292.035864978903
+     Cases by AQI: 1312.9746835443038
      AQI Status: Moderate
-     Cases by Population: 0.015433913026494769
-     Mortality Rate: 0.028384428025200366
+     Cases by Population: 0.015684036040395182
+     Mortality Rate: 0.02810583540879998
 Israel:
-     Cases by AQI: 3391.542484950163
+     Cases by AQI: 3437.136090002961
      AQI Status: Unhealthy for Sensitive Groups
-     Cases by Population: 0.041298096392868175
-     Mortality Rate: 0.008441360045393042
+     Cases by Population: 0.04185328009017529
+     Mortality Rate: 0.008418392982758373
 Italy:
-     Cases by AQI: 17845.931952662722
+     Cases by AQI: 18569.251901944208
      AQI Status: Moderate
-     Cases by Population: 0.02845252434724452
-     Mortality Rate: 0.03484554504336746
+     Cases by Population: 0.02960574394498643
+     Mortality Rate: 0.034847051941681834
 Jamaica:
-     Cases by AQI: 92.9429555574225
+     Cases by AQI: 94.69041418129883
      AQI Status: Unhealthy for Sensitive Groups
-     Cases by Population: 0.003827631674093234
-     Mortality Rate: 0.023592154026936634
+     Cases by Population: 0.0038995965469316497
+     Mortality Rate: 0.023511667110283026
 Japan:
-     Cases by AQI: 2527.8126964173475
+     Cases by AQI: 2617.4418604651164
      AQI Status: Moderate
-     Cases by Population: 0.0012618793899961916
-     Mortality Rate: 0.013855908497544601
+     Cases by Population: 0.001306622101754371
+     Mortality Rate: 0.014011790555548884
 Jordan:
-     Cases by AQI: 1756.1035120147874
+     Cases by AQI: 1827.2162661737523
      AQI Status: Unhealthy for Sensitive Groups
-     Cases by Population: 0.024479938010913437
-     Mortality Rate: 0.012672990531044617
+     Cases by Population: 0.025471243934332217
+     Mortality Rate: 0.01279483350935334
 Kazakhstan:
-     Cases by AQI: 1370.3464700007682
+     Cases by AQI: 1388.7762157179075
      AQI Status: Unhealthy for Sensitive Groups
-     Cases by Population: 0.009798566826804737
-     Mortality Rate: 0.013925484084360179
+     Cases by Population: 0.009930347437740527
+     Mortality Rate: 0.014072586667551734
 Kenya:
-     Cases by AQI: 647.2743323769587
+     Cases by AQI: 655.4844405208563
      AQI Status: Unhealthy for Sensitive Groups
-     Cases by Population: 0.0017703067264049949
-     Mortality Rate: 0.017253136933987997
+     Cases by Population: 0.0017927615171245345
+     Mortality Rate: 0.01734006734006734
 Kuwait:
-     Cases by AQI: 1229.849598359255
+     Cases by AQI: 1238.2498718167835
      AQI Status: Unhealthy for Sensitive Groups
-     Cases by Population: 0.03479173838542855
-     Mortality Rate: 0.0061563262158049435
+     Cases by Population: 0.03502937729419455
+     Mortality Rate: 0.006211180124223602
 Laos:
-     Cases by AQI: 0.2809393459155741
+     Cases by AQI: 0.29534649185996253
      AQI Status: Unhealthy for Sensitive Groups
-     Cases by Population: 5.6866564792889055e-06
+     Cases by Population: 5.9782798884832085e-06
      Mortality Rate: 0.0
 Latvia:
-     Cases by AQI: 373.9341608202914
+     Cases by AQI: 397.6254722072315
      AQI Status: Moderate
-     Cases by Population: 0.010661804305343981
-     Mortality Rate: 0.012171068456246693
+     Cases by Population: 0.011337303235932236
+     Mortality Rate: 0.013029315960912053
 Lebanon:
-     Cases by AQI: 845.2605740181269
+     Cases by AQI: 875.7238167170192
      AQI Status: Unhealthy
-     Cases by Population: 0.02207943400888833
-     Mortality Rate: 0.00802710450873078
+     Cases by Population: 0.022875178158730244
+     Mortality Rate: 0.008164732094728141
 Lithuania:
-     Cases by AQI: 1602.079186020792
+     Cases by AQI: 1712.5857111258572
      AQI Status: Good
-     Cases by Population: 0.02505970839674954
-     Mortality Rate: 0.008435731050669613
+     Cases by Population: 0.02678825048083294
+     Mortality Rate: 0.008692170588691137
 Luxembourg:
-     Cases by AQI: 998.839719373988
+     Cases by AQI: 1038.2083108472746
      AQI Status: Good
-     Cases by Population: 0.06344448157955626
-     Mortality Rate: 0.009320042142799254
+     Cases by Population: 0.06594510287854248
+     Mortality Rate: 0.009356481962781995
 Malaysia:
-     Cases by AQI: 663.5577459549935
+     Cases by AQI: 700.2603682350752
      AQI Status: Unhealthy for Sensitive Groups
-     Cases by Population: 0.0022564635812552035
-     Mortality Rate: 0.005325186731876848
+     Cases by Population: 0.0023812728100170173
+     Mortality Rate: 0.005152311900778158
 Malta:
-     Cases by AQI: 76.44297763109644
+     Cases by AQI: 78.46718005133847
      AQI Status: Unhealthy for Sensitive Groups
-     Cases by Population: 0.024192556315062612
-     Mortality Rate: 0.014295308452460903
+     Cases by Population: 0.024833172792368307
+     Mortality Rate: 0.014674268623235816
 Mauritius:
-     Cases by AQI: 5.291666666666667
+     Cases by AQI: 5.364583333333333
      AQI Status: Moderate
-     Cases by Population: 0.000401537223607227
-     Mortality Rate: 0.01968503937007874
+     Cases by Population: 0.0004070702168459093
+     Mortality Rate: 0.019417475728155338
 Mexico:
-     Cases by AQI: 10658.52759605639
+     Cases by AQI: 10893.292177278172
      AQI Status: Unhealthy for Sensitive Groups
-     Cases by Population: 0.008955873804253773
-     Mortality Rate: 0.09410945996179015
+     Cases by Population: 0.009153135756637204
+     Mortality Rate: 0.09310559789012297
 Monaco:
-     Cases by AQI: 3.987089424719955
+     Cases by AQI: 4.101006265426239
      AQI Status: Unhealthy
-     Cases by Population: 0.01628117327820132
-     Mortality Rate: 0.004761904761904762
+     Cases by Population: 0.0167463496575785
+     Mortality Rate: 0.004629629629629629
 Mongolia:
-     Cases by AQI: 4.981953730548488
+     Cases by AQI: 5.254126974735223
      AQI Status: Unhealthy
-     Cases by Population: 0.00027376353658270926
+     Cases by Population: 0.00028871973929387866
      Mortality Rate: 0.0
 Montenegro:
-     Cases by AQI: 476.86139747995423
+     Cases by AQI: 490.79801450935474
      AQI Status: Moderate
-     Cases by Population: 0.0038540114810803492
-     Mortality Rate: 0.013932260389142446
+     Cases by Population: 0.003966647736232429
+     Mortality Rate: 0.014081219853742026
 Morocco:
-     Cases by AQI: 3047.0193801619102
+     Cases by AQI: 3140.796467413525
      AQI Status: Unhealthy for Sensitive Groups
-     Cases by Population: 0.01042597590682375
-     Mortality Rate: 0.016467178358649564
+     Cases by Population: 0.010746852649079815
+     Mortality Rate: 0.016584740996854887
 Nepal:
-     Cases by AQI: 1588.6423841059602
+     Cases by AQI: 1611.76821192053
      AQI Status: Unhealthy
-     Cases by Population: 0.008185805028889612
-     Mortality Rate: 0.006573983367030035
+     Cases by Population: 0.008304965589828739
+     Mortality Rate: 0.00672619023161597
 Netherlands:
-     Cases by AQI: 13156.853985422054
+     Cases by AQI: 13635.527862685163
      AQI Status: Good
-     Cases by Population: 0.032845916673329055
-     Mortality Rate: 0.017411863943341297
+     Cases by Population: 0.034040919848381694
+     Mortality Rate: 0.01699720133328965
 New Zealand:
-     Cases by AQI: 51.8981018981019
+     Cases by AQI: 52.07292707292707
      AQI Status: Good
-     Cases by Population: 0.0004415810386207031
-     Mortality Rate: 0.01203079884504331
+     Cases by Population: 0.0004430685589625438
+     Mortality Rate: 0.011990407673860911
 Nigeria:
-     Cases by AQI: 442.298272750709
+     Cases by AQI: 448.85924207269915
      AQI Status: Unhealthy
-     Cases by Population: 0.00035951766075043484
-     Mortality Rate: 0.01717982718172148
+     Cases by Population: 0.00036485067805621746
+     Mortality Rate: 0.016957426950965613
 North Macedonia:
-     Cases by AQI: 454.0041067761807
+     Cases by AQI: 475.37303216974675
      AQI Status: Unhealthy for Sensitive Groups
-     Cases by Population: 0.03277173913043478
-     Mortality Rate: 0.028297904417307403
+     Cases by Population: 0.034314229249011854
+     Mortality Rate: 0.02846570293152105
 Norway:
-     Cases by AQI: 1172.3594811612106
+     Cases by AQI: 1201.976528721433
      AQI Status: Good
-     Cases by Population: 0.007155185591690553
-     Mortality Rate: 0.009325360238139143
+     Cases by Population: 0.007335945397344546
+     Mortality Rate: 0.009275436793422406
 Oman:
-     Cases by AQI: 2050.2803430079157
+     Cases by AQI: 2066.7051451187335
      AQI Status: Moderate
-     Cases by Population: 0.026816646686490107
-     Mortality Rate: 0.011541957226391269
+     Cases by Population: 0.02703147492527385
+     Mortality Rate: 0.011601835228406144
 Pakistan:
-     Cases by AQI: 3220.255630893929
+     Cases by AQI: 3298.098355545164
      AQI Status: Unhealthy for Sensitive Groups
-     Cases by Population: 0.0020972463879892368
-     Mortality Rate: 0.020094822975331023
+     Cases by Population: 0.002147942789709595
+     Mortality Rate: 0.020055343010877195
 Panama:
-     Cases by AQI: 1684.196740395809
+     Cases by AQI: 1738.746604578968
      AQI Status: Unhealthy for Sensitive Groups
-     Cases by Population: 0.04235776866515216
-     Mortality Rate: 0.01816747020569447
+     Cases by Population: 0.043729704895858014
+     Mortality Rate: 0.01792110695754059
 Peru:
-     Cases by AQI: 6530.7412888470335
+     Cases by AQI: 6551.271357459976
      AQI Status: Unhealthy for Sensitive Groups
-     Cases by Population: 0.030183284971453096
-     Mortality Rate: 0.03728137939558742
+     Cases by Population: 0.030278169286115226
+     Mortality Rate: 0.037245664906069544
 Philippines:
-     Cases by AQI: 3357.3651134273455
+     Cases by AQI: 3393.5085836909875
      AQI Status: Unhealthy for Sensitive Groups
-     Cases by Population: 0.004175342879383336
-     Mortality Rate: 0.01946268738486403
+     Cases by Population: 0.004220292229871894
+     Mortality Rate: 0.01958060909922423
 Poland:
-     Cases by AQI: 9394.697914810195
+     Cases by AQI: 9589.91267153805
      AQI Status: Unhealthy for Sensitive Groups
-     Cases by Population: 0.027619945889403374
-     Mortality Rate: 0.01883857406952469
+     Cases by Population: 0.028193867591466464
+     Mortality Rate: 0.019134345555576204
 Portugal:
-     Cases by AQI: 6552.333950236479
+     Cases by AQI: 6744.314209335801
      AQI Status: Good
-     Cases by Population: 0.03084755456843725
-     Mortality Rate: 0.015302535777052474
+     Cases by Population: 0.03175137320216475
+     Mortality Rate: 0.015616996365587726
 Qatar:
-     Cases by AQI: 1319.08087194489
+     Cases by AQI: 1323.0442578088139
      AQI Status: Unhealthy for Sensitive Groups
-     Cases by Population: 0.05296393505483268
-     Mortality Rate: 0.0017097930363491984
+     Cases by Population: 0.05312307352462535
+     Mortality Rate: 0.0017046710840709542
 Romania:
-     Cases by AQI: 5061.6847555511295
+     Cases by AQI: 5224.285572040227
      AQI Status: Unhealthy for Sensitive Groups
-     Cases by Population: 0.025831449544003227
-     Mortality Rate: 0.023971908841436428
+     Cases by Population: 0.026661255229224037
+     Mortality Rate: 0.024129222852241863
 Russia:
-     Cases by AQI: 22364.65021339766
+     Cases by AQI: 23127.78808684357
      AQI Status: Unhealthy for Sensitive Groups
-     Cases by Population: 0.016740510578273506
-     Mortality Rate: 0.017518633357422767
+     Cases by Population: 0.01731173872274273
+     Mortality Rate: 0.01752066924672034
 Saudi Arabia:
-     Cases by AQI: 3183.784743806056
+     Cases by AQI: 3189.0151851522955
      AQI Status: Unhealthy for Sensitive Groups
-     Cases by Population: 0.01088480422420002
-     Mortality Rate: 0.01660688485632841
+     Cases by Population: 0.01090268619004923
+     Mortality Rate: 0.016677109004079472
 Serbia:
-     Cases by AQI: 2006.5966031716243
+     Cases by AQI: 2195.993243877264
      AQI Status: Unhealthy for Sensitive Groups
-     Cases by Population: 0.0043583067286530495
-     Mortality Rate: 0.008842936172799671
+     Cases by Population: 0.004769674241319507
+     Mortality Rate: 0.008810949163985352
 Singapore:
-     Cases by AQI: 1029.60410038883
+     Cases by AQI: 1030.1343230823613
      AQI Status: Moderate
-     Cases by Population: 0.01020434259545365
-     Mortality Rate: 0.0004978113466655223
+     Cases by Population: 0.010209597599794284
+     Mortality Rate: 0.0004975551170970233
 Slovakia:
-     Cases by AQI: 1717.9288796310075
+     Cases by AQI: 1774.0217229578934
      AQI Status: Moderate
-     Cases by Population: 0.021194780439755624
-     Mortality Rate: 0.00849630181358369
+     Cases by Population: 0.021886820437831862
+     Mortality Rate: 0.008772812667740205
 Slovenia:
-     Cases by AQI: 2053.1605715669652
+     Cases by AQI: 2129.7166384112375
      AQI Status: Good
-     Cases by Population: 0.04075768181940561
-     Mortality Rate: 0.020053081686818047
+     Cases by Population: 0.04227741089320261
+     Mortality Rate: 0.02117449053857351
 South Africa:
-     Cases by AQI: 8262.961443806398
+     Cases by AQI: 8427.901968826907
      AQI Status: Moderate
-     Cases by Population: 0.014207411951332679
-     Mortality Rate: 0.027256007664394816
+     Cases by Population: 0.014491012208016919
+     Mortality Rate: 0.027293223294143125
 Spain:
-     Cases by AQI: 25494.05266343826
+     Cases by AQI: 25761.622276029055
      AQI Status: Moderate
-     Cases by Population: 0.036342825515662286
-     Mortality Rate: 0.027455009862600296
+     Cases by Population: 0.03672425705469831
+     Mortality Rate: 0.027401299867005652
 Sri Lanka:
-     Cases by AQI: 264.47790189412336
+     Cases by AQI: 285.3618261291889
      AQI Status: Unhealthy for Sensitive Groups
-     Cases by Population: 0.001304215560180653
-     Mortality Rate: 0.004774496841486705
+     Cases by Population: 0.0014072001148445433
+     Mortality Rate: 0.004833548914153448
 Sweden:
-     Cases by AQI: 9432.262428136624
+     Cases by AQI: 10068.718295569834
      AQI Status: Good
-     Cases by Population: 0.02814250979824737
-     Mortality Rate: 0.02533774093620927
+     Cases by Population: 0.03004146729883184
+     Mortality Rate: 0.024182822135343195
 Switzerland:
-     Cases by AQI: 9770.192853091323
+     Cases by AQI: 10169.256948383438
      AQI Status: Good
-     Cases by Population: 0.040643793862792675
-     Mortality Rate: 0.015425388319782175
+     Cases by Population: 0.04230389198684994
+     Mortality Rate: 0.015522857589076549
 Syria:
-     Cases by AQI: 67.08221298785952
+     Cases by AQI: 69.90955756538743
      AQI Status: Unhealthy for Sensitive Groups
-     Cases by Population: 0.0004506327029839515
-     Mortality Rate: 0.05307907202720758
+     Cases by Population: 0.0004696257247178797
+     Mortality Rate: 0.05337995337995338
 Tanzania:
      Cases by AQI: 4.534925160370634
      AQI Status: Unhealthy for Sensitive Groups
      Cases by Population: 8.88151860497551e-06
      Mortality Rate: 0.0412573673870334
 Thailand:
-     Cases by AQI: 30.77853363567649
+     Cases by AQI: 31.186696900982614
      AQI Status: Unhealthy for Sensitive Groups
-     Cases by Population: 5.898242597470161e-05
-     Mortality Rate: 0.014734774066797643
+     Cases by Population: 5.976460942328557e-05
+     Mortality Rate: 0.014541929229277752
 Tunisia:
-     Cases by AQI: 827.6478232618583
+     Cases by AQI: 856.4408706952566
      AQI Status: Unhealthy for Sensitive Groups
-     Cases by Population: 0.008836184339627894
-     Mortality Rate: 0.03416094210009814
+     Cases by Population: 0.009143586434662053
+     Mortality Rate: 0.03478590734506141
 Turkey:
-     Cases by AQI: 6936.993566336289
+     Cases by AQI: 7769.344461832725
      AQI Status: Unhealthy for Sensitive Groups
-     Cases by Population: 0.009881637282398345
-     Mortality Rate: 0.018429789457984968
+     Cases by Population: 0.011067307928092655
+     Mortality Rate: 0.017136846345803074
 US:
-     Cases by AQI: 228152.83676703644
+     Cases by AQI: 239138.20919175912
      AQI Status: Moderate
-     Cases by Population: 0.04437054745418228
-     Mortality Rate: 0.01939735951461347
+     Cases by Population: 0.04650695301187748
+     Mortality Rate: 0.01892976636059978
 Ukraine:
-     Cases by AQI: 7294.672930331502
+     Cases by AQI: 7578.922176918986
      AQI Status: Unhealthy for Sensitive Groups
-     Cases by Population: 0.018609908561724755
-     Mortality Rate: 0.016861789704551117
+     Cases by Population: 0.01933507506860635
+     Mortality Rate: 0.016856245336551844
 United Arab Emirates:
-     Cases by AQI: 2035.962364966895
+     Cases by AQI: 2077.3260541293994
      AQI Status: Moderate
-     Cases by Population: 0.018646095352784452
-     Mortality Rate: 0.0033604144320956665
+     Cases by Population: 0.019024919296457662
+     Mortality Rate: 0.00333264369230081
 United Kingdom:
-     Cases by AQI: 25201.576208178438
+     Cases by AQI: 26094.88475836431
      AQI Status: Moderate
-     Cases by Population: 0.025608422645060556
-     Mortality Rate: 0.03605781428670892
+     Cases by Population: 0.026516152491663655
+     Mortality Rate: 0.03540411002227502
 Uruguay:
-     Cases by AQI: 83.23234821318165
+     Cases by AQI: 92.80326449857796
      AQI Status: Moderate
-     Cases by Population: 0.0019472047443407825
-     Mortality Rate: 0.011885306789481503
+     Cases by Population: 0.002171114486150286
+     Mortality Rate: 0.01105929380413058
 Venezuela:
-     Cases by AQI: 793.7418812562084
+     Cases by AQI: 801.5893634904867
      AQI Status: Unhealthy for Sensitive Groups
-     Cases by Population: 0.0032484844997500554
-     Mortality Rate: 0.008789241121711255
+     Cases by Population: 0.003280601268440365
+     Mortality Rate: 0.008808053077099061
 Vietnam:
-     Cases by AQI: 8.860759493670885
+     Cases by AQI: 8.938656280428432
      AQI Status: Unhealthy
-     Cases by Population: 1.4287089913419189e-05
-     Mortality Rate: 0.02564102564102564
+     Cases by Population: 1.441269070386683e-05
+     Mortality Rate: 0.025417574437182282
 Zimbabwe:
-     Cases by AQI: 81.49435944985319
+     Cases by AQI: 83.75057950857673
      AQI Status: Unhealthy for Sensitive Groups
-     Cases by Population: 0.0006380557322050993
-     Mortality Rate: 0.026642647198255428
+     Cases by Population: 0.0006557206865811199
+     Mortality Rate: 0.027124273456960973

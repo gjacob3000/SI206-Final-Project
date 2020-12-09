@@ -79,58 +79,6 @@ def getPollutionData(curr, conn, ):
     return countries
 
 
-def getPollutionApiData(curr,conn):
-    try:
-        curr.execute("SELECT name,lat,lon FROM CountryCases")
-        list_of_coords = curr.fetchall()
-        count = 0 #this checks how many countries we actually add to the database that aren't repeats
-        run = 0 #using this to keep track of how many times we call on the api
-        for coord in list_of_coords:
-            if count < 25: #using to make sure we only bring in 25 data points per run
-                url = "http://api.airvisual.com/v2/nearest_city?lat="+str(coord[1])+"&lon="+str(coord[2])+"&key="+AIRVISUALKEY
-                r = requests.get(url)
-                dict_list = json.loads(r.text)
-                if dict_list["data"]["status"] == "fail":
-                    print("fail")
-                    conn.commit()
-                    return
-                covid_lat = coord[1]
-                covid_lon = coord[2]
-                aqi_lat = dict_list["data"]["location"]["coordinates"][1]
-                aqi_lon = dict_list["data"]["location"]["coordinates"][0]
-                aqi_close = isAQIClose(covid_lat, covid_lon, aqi_lat, aqi_lon)
-                
-                if aqi_close is False or (dict_list["data"] == "no_nearest_station"):
-                    print(coord[0])
-                    print(dict_list["data"]["country"])
-                    print("wrong country!")
-                    #removeFromData(curr, conn, coord[0])
-                else:
-                    name = dict_list["data"]["country"]
-                    city = dict_list["data"]["city"]
-                    aqi = dict_list["data"]["current"]["pollution"]["aqius"]
-
-                    curr.execute("SELECT name FROM CountryAQIs WHERE name = ?", (name,))
-                    check = curr.fetchone()
-    
-                    if check is None:
-                        curr.execute("INSERT OR IGNORE INTO CountryAQIs (name, city, aqi) VALUES (?,?,?)", (name, city, aqi))
-                        count += 1
-                
-            run += 1
-            #cant pull more than 10 per minute so we need to pause the system for a few seconds before collecting more
-            if run % 9 == 0 and run != 0: 
-                print("Pausing for a bit...")
-                time.sleep(60) # this pauses the program to give api a break
-        conn.commit()    
-        
-    except:
-        print("error when reading from url")
-        dict_list = []
-        conn.commit()  
-    conn.commit()  
-    return
-
 def getCovidApiData(curr, conn, countries):
     try:
         url = "https://covid-api.mmediagroup.fr/v1/cases"
@@ -167,34 +115,6 @@ def getCovidApiData(curr, conn, countries):
                     count += 1
                 else:
                     removeFromData(curr, conn, country)
-        """
-        for items in dict_list.items():
-            if count < 25: #using to make sure we only bring in 25 data points per run
-                name = items[0]
-                confirmed = items[1]["All"]["confirmed"]
-                deaths = items[1]["All"]["deaths"]
-
-                if "population" in items[1]["All"]:
-                    population = items[1]["All"]["population"] 
-                if "life_expectancy" in items[1]["All"]:
-                    life_expectancy = items[1]["All"]["life_expectancy"]
-                if "lat" in items[1]["All"]:
-                    lat = items[1]["All"]["lat"]
-                if "long" in items[1]["All"]:
-                    lon = items[1]["All"]["long"] 
-
-                #using this to check if value already exists in table
-                curr.execute("SELECT name FROM Countries WHERE name = ?", (name,))
-                check = curr.fetchone()
-    
-                if check is None:
-                    curr.execute("INSERT OR IGNORE INTO CountryCases (name, cases, deaths, population, LE, lat, lon) VALUES (?,?,?,?,?,?,?)", (name,confirmed,deaths,population,life_expectancy,lat,lon))
-                    curr.execute("INSERT OR IGNORE INTO Countries (name) VALUES (?)", (name,))
-                    count += 1
-
-            #print((name,confirmed, deaths, population, life_expectancy, lat, lon))
-        conn.commit()
-        """
 
     except:
         print("error when accessing Covid API")
@@ -207,23 +127,6 @@ def removeFromData(curr, conn, name):
     curr.execute("DELETE FROM CountryAQIs WHERE name = ?", (name,))
     conn.commit()
 
-def dropTablesForDebugging(curr,conn):
-    curr.execute("DROP TABLE IF EXISTS CountryCases")
-    curr.execute("DROP TABLE IF EXISTS CountryAQIs")
-
-#checking to see if air quality loc is close to covid loc
-#making the dist <= 6 means the air quality location is within 300 miles
-def isAQIClose(covid_lat, covid_lon, aqi_lat, aqi_lon):
-    lat_diff = (covid_lat - aqi_lat)**2
-    lon_diff = (covid_lon - aqi_lon)**2
-    dist = math.sqrt(lat_diff + lon_diff)
-
-    if dist <= 6:
-        return True
-    else:
-        return False
-
-
 
 def main():
     curr,conn = setUpDatabase("covid_data.db")
@@ -235,7 +138,7 @@ def main():
     
     
     
-    print("hello world!")
+    print("Successfully ran main!")
 
 if __name__ == "__main__":
     main()

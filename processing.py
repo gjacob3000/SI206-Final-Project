@@ -11,6 +11,7 @@ def setUpDatabase(db_name):
     conn = sqlite3.connect(path+'/'+db_name)
     curr = conn.cursor()
     return curr, conn
+
 def writeToFile(global_cases, global_deaths, global_population, total_aqi, color_avg_cases, color_avg_deaths, country_dict, num_data):
     # need to write to file
     f = open("processed_data.txt", "w")
@@ -102,7 +103,7 @@ def createGraphs(country_names, country_cases_by_pop, country_colors, color_avg_
                                 mode='markers',
                                 marker_color=country_colors
                                 )) # hover text goes here
-    fig.update_layout(title='Countries vs Cases/Population')
+    fig.update_layout(title='Countries vs Cases/Population', xaxis= dict(title = "Countries"), yaxis = dict(title = "%Cases"))
     fig.write_html('Countries_vs_CasesbyPopulation.html', auto_open=True)
 
     fig = go.Figure(data=go.Scatter(x=country_aqis,
@@ -186,9 +187,9 @@ def main():
     color_avg_deaths = color_data[1]
     
     writeToFile(total_cases,total_deaths,total_population,total_aqi,color_avg_cases,color_avg_deaths,country_dict,num_elements)   
-
     createGraphs(country_names, country_cases_by_pop,country_colors, color_avg_cases, color_avg_deaths,country_aqis,country_deaths_by_cases)
-    #get average number of deaths per country
+    
+    print("Successfully ran processing.py")
 
 if __name__ == "__main__":
     main()
